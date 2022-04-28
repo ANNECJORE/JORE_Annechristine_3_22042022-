@@ -1,0 +1,311 @@
+@charset "UTF-8";
+html {
+  font-family: 'Roboto';
+}
+
+.logo_principal {
+  text-align: center;
+
+  font-size: 50px;
+  font-family: 'Shrikhand';
+}
+
+.formulaireoù {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  background-color: darkgrey;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 50px;
+  border-top: 2px solid grey;
+  width: 100%;
+}
+
+.iconegeo {
+  font-size: 25px;
+  margin-top: 0px;
+ margin-right:  7px;
+  font-size: 20px;
+  justify-content: center;
+}
+
+.geol {
+  height: 50px;
+  font-size: 17px;
+  font-weight: 400;
+  background-color: darkgrey;
+  justify-items: center;
+  width: 70%;
+}
+
+.presentation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #f2f2f2;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 35px;
+}
+.presentation button
+{
+   color: #ffffff;
+   font-size:18px;
+  border:1px solid;
+  height: 45px;
+  padding-left:15px;
+  padding-right: 15px;
+  border-radius: 20px 20px 20px 20px;
+  background-image: linear-gradient(to top, rgba(168, 120, 227, 0.9),rgba(237, 130, 137, 0.9));
+ box-shadow: 1px 2px 2px  #f2f2f2;
+ transition: 200ms;
+}
+.presentation button:hover
+{
+  transform:scale(1.05) ;
+  opacity:0,5;
+}
+.presentation_titre {
+  font-weight: 800;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 50%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+.presentation_detail {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.boutonexplorer {
+  height: 41px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #9356DC;
+  border: 2px solid #9356DC;
+  border-radius: 20px 20px 20px 20px;
+}
+
+.explorer {
+  color: white;
+  border: none;
+  background-color: #9356DC;
+  font-size: 16px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 7px;
+}
+
+.fonctionnement {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  background-color: white;
+}
+
+h2 {
+  text-align: left;
+}
+
+/*.boutonchoix
+   {
+     display: flex;
+     width: 80%;
+     flex-direction: row;
+    
+   } */
+/*.formulairechoix
+  {
+    display: flex;
+    flex-wrap: nowrap;
+    height: 45px ;
+   flex-direction: row;
+     flex-grow: 1 1 320px;
+    margin-bottom:20px;
+    margin-top: 15px;
+    width: 300px; 
+   /* .formulairechoix__violet
+    {
+      background-color: #a887cf;
+      
+    }*/
+/*}*/
+/*.number
+  {
+    position: relative; 
+    color: white;
+    font-weight: bold;
+    font-size: 10px;
+    background-color: blueviolet;
+    border: 2px solid blueviolet;
+    border-radius: 50%;
+    padding:4px 7px 0px 7px;
+    height: 17px;
+    width: auto;
+  }*/
+/*
+  .formulaireicone
+  {
+    margin-left: -15px;
+    padding-right:0px;
+    padding-left: 25px;
+    padding-top: 2px;
+    padding-bottom:10px;
+    background-color: #f2f2f2;
+    border-radius: 25px 0px 0px 25px;
+    height: 35px;
+    width: 70%;
+    border: 2px solid #f2f2f2;   
+  }*/
+.numberpuce {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: row;
+      -ms-flex-pack: row;
+          justify-content: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 42px;
+  margin-bottom: 22px;
+  margin-top: 15px;
+  padding-top: 3px;
+  width: 95%;
+}
+
+.number {
+  position: relative;
+  margin-top: 13px;
+  color: white;
+  font-weight: bold;
+  font-size: 10px;
+  background-color: blueviolet;
+  border: 2px solid blueviolet;
+  border-radius: 50%;
+  padding: 4px 7px 0px 7px;
+  height: 17px;
+  width: auto;
+}
+
+.formulaireicone {
+  margin-left: -12px;
+  border: 1px solid #f2f2f2;
+  border-radius: 25px 0px 0px 25px;
+  height: 52px;
+  margin-top: 16px;
+  padding-left: 15px;
+  background-color: #f2f2f2;
+  padding-top: 0px;
+  padding-bottom: 2px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.iconechoix {
+  font-size: 26px;
+  margin-left: 10px;
+  margin-top: 10px;
+  padding-top: 3px;
+  padding-bottom: 0px;
+  margin-bottom: 2px;
+  padding-left: 12px;
+  padding-right: 10px;
+  width: 20%;
+}
+
+.iconetrois, .violet {
+  color: #9356DC;
+}
+ 
+.choix {
+  padding-right: 30px;
+  margin-bottom: 0px;
+  padding-top: 14px;
+  padding-left: 20px;
+  height: 41px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  font-size: 17px;
+  font-weight: bold;
+  border: 1px solid #f2f2f2;
+  background-color: #f2f2f2;
+  border-radius: 0px 25px 25px 0px;
+}
+
+/*main*/
+#restau
+/*.photoseule {
+  width: 92%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  height: 350px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border: none;
+}*/
+.menu__card
+.new
+{
+  border:1px solid green;
+  position: absolute;
+}
+.card
+{
+  border: 2px solid black;
+  height: 40rem;}
+
+  .card__image {
+    height: 15rem;
+    background-size: cover;
+    border-radius: 20px;
+    margin-top: 20px;
+     
+  }
+  
+.c1{
+ background-image: url("./assert/palette.jpg");
+}
+.c2
+{
+  background-image: url("./assert/Lanoteenchanntee.jpg");
+}
+.c3
+{
+  background-image: url("./assert/alafrançaise.jpg");
+}
+.c4
+{
+  background-image: url("./assert/ledelicedessens.jpg"); 
+}
+
+  /*# sourceMappingURL=style.css.map */
