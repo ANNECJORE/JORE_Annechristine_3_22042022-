@@ -1,4 +1,4 @@
-@import ".variable";
+@import "_variable";
 html{
     font-family: 'Roboto';
   }
@@ -44,8 +44,8 @@ justify-items: center;
   {
     font-weight: 800;
     font-size: 20px;
-    justify-content: center;
-    width: 50%;
+    justify-content: stretch;
+    width: 100%;
     align-items: center;
     text-align: center;
     margin-bottom: 0px;
@@ -55,28 +55,18 @@ justify-items: center;
     align-items: center;
     text-align: center;
   }
-  .boutonexplorer
-  {
-    height: 41px;
-    align-items: center;
-    background-color: #9356DC;
-    border: 2px solid #9356DC;
-    border-radius: 20px 20px 20px 20px;
-  }
+  
   .explorer
   {
     color: white;
     border: none;
-    background-color: #9356DC;
-    font-size: 16px;
+ border-radius: 20px 20px 20px 20px;
+    font-size: 18px;
     align-items: center;
     margin: 7px;
-  }
-  .presentation button
-{
-   color: white;
+   height: 57px;
   border:1px solid blue;
-  background-image: linear-gradient(to right blue, red) ;
+  background-image: linear-gradient(to right rgb(144, 49, 115,0.9),rgb(220, 66, 129,0.9));
 }
 main
 {margin-right: 15px;

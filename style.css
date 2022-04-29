@@ -5,8 +5,7 @@ html {
 
 .logo_principal {
   text-align: center;
-
-  font-size: 50px;
+  font: size 50px;
   font-family: 'Shrikhand';
 }
 
@@ -14,7 +13,6 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  align-items: center;
   background-color: darkgrey;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -26,10 +24,9 @@ html {
 
 .iconegeo {
   font-size: 25px;
-  margin-top: 0px;
- margin-right:  7px;
-  font-size: 20px;
-  justify-content: center;
+  margin-top: 12px;
+  margin-right: 20px;
+  font-size: 17px;
 }
 
 .geol {
@@ -42,46 +39,18 @@ html {
 }
 
 .presentation {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  background-color: #f2f2f2;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  text-align: center;
+  /*background-color: #f2f2f2;*/
   padding-bottom: 35px;
 }
-.presentation button
-{
-   color: #ffffff;
-   font-size:18px;
-  border:1px solid;
-  height: 45px;
-  padding-left:15px;
-  padding-right: 15px;
-  border-radius: 20px 20px 20px 20px;
-  background-image: linear-gradient(to top, rgba(168, 120, 227, 0.9),rgba(237, 130, 137, 0.9));
- box-shadow: 1px 2px 2px  #f2f2f2;
- transition: 200ms;
-}
-.presentation button:hover
-{
-  transform:scale(1.05) ;
-  opacity:0,5;
-}
+
 .presentation_titre {
   font-weight: 800;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 50%;
+  font-size: 20px;
+  -webkit-box-pack: stretch;
+      -ms-flex-pack: stretch;
+          justify-content: stretch;
+  width: 100%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -96,25 +65,24 @@ html {
   text-align: center;
 }
 
-.boutonexplorer {
-  height: 41px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: #9356DC;
-  border: 2px solid #9356DC;
-  border-radius: 20px 20px 20px 20px;
-}
-
 .explorer {
   color: white;
   border: none;
-  background-color: #9356DC;
-  font-size: 16px;
+  border-radius: 20px 20px 20px 20px;
+  font-size: 18px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   margin: 7px;
+  height: 57px;
+  border: 1px solid blue;
+  background-image: -webkit-gradient(linear, right blue, from(red));
+  background-image: linear-gradient(to right blue, red);
+}
+
+main {
+  margin-right: 15px;
+  margin-left: 15px;
 }
 
 .fonctionnement {
@@ -187,6 +155,7 @@ h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  list-style-type: none;
   -webkit-box-pack: row;
       -ms-flex-pack: row;
           justify-content: row;
@@ -229,6 +198,21 @@ h2 {
           justify-content: center;
 }
 
+.violet {
+  margin-left: -12px;
+  border: 1px solid #DCA4ED;
+  border-radius: 25px 0px 0px 25px;
+  height: 52px;
+  margin-top: 16px;
+  padding-left: 15px;
+  padding-top: 0px;
+  padding-bottom: 2px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #DCA4ED;
+}
+
 .iconechoix {
   font-size: 26px;
   margin-left: 10px;
@@ -241,10 +225,10 @@ h2 {
   width: 20%;
 }
 
-.iconetrois, .violet {
+.iconetrois {
   color: #9356DC;
 }
- 
+
 .choix {
   padding-right: 30px;
   margin-bottom: 0px;
@@ -262,50 +246,48 @@ h2 {
   border-radius: 0px 25px 25px 0px;
 }
 
+.choixtrois {
+  padding-right: 30px;
+  margin-bottom: 0px;
+  padding-top: 14px;
+  padding-left: 20px;
+  height: 41px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  font-size: 17px;
+  font-weight: bold;
+  border: 1px solid #DCA4ED;
+  background-color: #DCA4ED;
+  border-radius: 0px 25px 25px 0px;
+}
+
 /*main*/
-#restau
-/*.photoseule {
-  width: 92%;
-  -o-object-fit: contain;
-     object-fit: contain;
-  height: 350px;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-  border: none;
-}*/
-.menu__card
-.new
-{
-  border:1px solid green;
-  position: absolute;
+.menu {
+  background-color: #f6f6f6;
+  display: block;
 }
-.card
-{
+
+.card {
   border: 2px solid black;
-  height: 40rem;}
-
-  .card__image {
-    height: 15rem;
-    background-size: cover;
-    border-radius: 20px;
-    margin-top: 20px;
-     
-  }
-  
-.c1{
- background-image: url("./assert/palette.jpg");
-}
-.c2
-{
-  background-image: url("./assert/Lanoteenchanntee.jpg");
-}
-.c3
-{
-  background-image: url("./assert/alafrançaise.jpg");
-}
-.c4
-{
-  background-image: url("./assert/ledelicedessens.jpg"); 
+  height: 40rem;
 }
 
-  /*# sourceMappingURL=style.css.map */
+.card .card__image {
+  background-image: url("./assert/palette.jpg");
+  height: 15rem;
+  background-size: cover;
+}
+
+/*
+  .photoseule
+  {
+    width :92%;
+    object-fit: contain;
+    height: 350px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border: none;
+  }*/
+/*# sourceMappingURL=style.css.map */
