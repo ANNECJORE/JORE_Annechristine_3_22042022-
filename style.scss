@@ -1,13 +1,17 @@
-@import "_variable";
+@import ".variable";
 html{
     font-family: 'Roboto';
   }
-  .logo_principal
+  .logo 
   {   
      text-align: center;
      font: size 50px;
-     font-family: 'Shrikhand'
-  }
+     font-family: 'Shrikhand'; 
+     .logo_blanc
+     {
+      color: white;
+     }
+    }
   .formulaireoù
   {   
       display: flex;
@@ -55,7 +59,14 @@ justify-items: center;
     align-items: center;
     text-align: center;
   }
-  
+  .degrade-angulaire
+  { height: 145px;
+    width: 300px;
+     display: block;
+     border: 1px solid saddlebrown;
+   
+   
+  }
   .explorer
   {
     color: white;
@@ -66,7 +77,10 @@ justify-items: center;
     margin: 7px;
    height: 57px;
   border:1px solid blue;
-  background-image: linear-gradient(to right rgb(144, 49, 115,0.9),rgb(220, 66, 129,0.9));
+  
+  background: #9356DC; /* fallback color if gradients are not supported*/ 
+  
+  background: linear-gradient(-11deg,rgba(147,86,220,0.6) 44%, rgba(255,121,218,0.6) 79%);
 }
 main
 {margin-right: 15px;
@@ -171,7 +185,7 @@ margin-left: 15px;
   padding-left: 15px;
     background-color:#f2f2f2;
     padding-top: 0px;
-    padding-bottom: 2px;
+    padding-bottom: 5px;
     justify-content: center;
   }
 .violet
@@ -233,7 +247,8 @@ padding-left: 15px;
   border-radius:0px 25px 25px 0px;
   } 
   /*main*/
-  .menu{
+  #menu
+  {
     background-color: #f6f6f6;
     display: block;
   }
@@ -242,11 +257,13 @@ padding-left: 15px;
   border: 2px solid black;
   height: 40rem;
   & .card__image {
-    background-image: url("./assert/palette.jpg");
+   
+    background-image: url("./assert/Lanoteenchanntee.jpg");
     height: 15rem;
     background-size: cover;
   }
 }
+.blackandwhite
 
 /*
   .photoseule
@@ -258,4 +275,4 @@ padding-left: 15px;
     border-top-right-radius: 20px;
     border: none;
   }*/
-  /*# sourceMappingURL=style.css.map */
+  # sourceMappingURL=style.css.map
