@@ -1,48 +1,48 @@
-@import ".variable";
-html{
-    font-family: 'Roboto';
+@import "./variable";
+body{
+    font-family: 'Roboto', cursive;
+    margin: 0px;
   }
   .logo 
   {   
      text-align: center;
-     font: size 50px;
-     font-family: 'Shrikhand'; 
+     font-size: 50px;
+     font-family:'Shrikhand'; 
      .logo_blanc
      {
       color: white;
+      font-size: 25px;
+      margin-top: 10px;
      }
     }
   .formulaireoù
   {   
       display: flex;
-      background-color:darkgrey ;
+      background-color:rgb(199, 196, 196) ;
       justify-content: center;
       height: 50px;
       border-top: 2px solid grey;
-      width:100%;
+      width:100%;  
+      padding-bottom: 5px;  
+    .iconegeo
+      {
+      align-items: center;
+      margin-right: 20px;
+      margin-top: 17px; 
+      font-size: 18px;  
+    }
   }
-  .iconegeo
-{
-font-size: 25px;
-margin-top: 12px;
-margin-right: 20px; 
-font-size: 17px;
-
-}
-  .geol
-  {
-height: 50px;
-font-size: 17px;
-font-weight: 400;
-background-color: darkgrey;
-justify-items: center;
- width: 70%;
-  }
+ .lieu{
+   font-size: 20px;
+ }
+ 
   .presentation
   {
     text-align: center;
-    /*background-color: #f2f2f2;*/
-    padding-bottom: 35px;
+    background-color: #f2f2f2;
+    padding-top:35px;
+    padding-bottom: 20px;
+    margin-bottom: 0%;
   }
   .presentation_titre
   {
@@ -59,113 +59,87 @@ justify-items: center;
     align-items: center;
     text-align: center;
   }
-  .degrade-angulaire
-  { height: 145px;
-    width: 300px;
-     display: block;
-     border: 1px solid saddlebrown;
-   
-   
-  }
   .explorer
   {
     color: white;
     border: none;
+    cursor:pointer;
  border-radius: 20px 20px 20px 20px;
     font-size: 18px;
     align-items: center;
     margin: 7px;
    height: 57px;
-  border:1px solid blue;
-  
-  background: #9356DC; /* fallback color if gradients are not supported*/ 
-  
-  background: linear-gradient(-11deg,rgba(147,86,220,0.6) 44%, rgba(255,121,218,0.6) 79%);
+   transform: scale(1);
+    background: linear-gradient(-11deg,rgba(147,86,220,0.6) 44%, rgba(255,121,218,0.6) 79%);
+    &:hover{
+      transform: scale(1.15);
+    }
 }
 main
-{margin-right: 15px;
-margin-left: 15px;
+{
+  margin-right: 15px;
+  margin-left: 15px;
 }
-  .fonctionnement 
-   {
-    display:flex ; 
+ /* .fonctionnement */
+  /* {
+     display: flex; 
+     flex-direction: column;   
+    /* align-items: center; */
+
+  .formulairechoix
+  {  
+    display: flex;
     flex-direction: column;
-    width: 100%;
-    background-color: white;
-    
-   } 
-   h2
-   {
-     text-align: left;
-   }
-   /*.boutonchoix
-   {
-     display: flex;
-     width: 80%;
-     flex-direction: row;
-    
-   } */
-  /*.formulairechoix
-  {
-    display: flex;
-    flex-wrap: nowrap;
-    height: 45px ;
-   flex-direction: row;
-     flex-grow: 1 1 320px;
-    margin-bottom:20px;
-    margin-top: 15px;
-    width: 300px; 
-   /* .formulairechoix__violet
-    {
-      background-color: #a887cf;
-      
-    }*/
-  /*}*/
-  /*.number
-  {
-    position: relative; 
-    color: white;
-    font-weight: bold;
-    font-size: 10px;
-    background-color: blueviolet;
-    border: 2px solid blueviolet;
-    border-radius: 50%;
-    padding:4px 7px 0px 7px;
-    height: 17px;
-    width: auto;
-  }*/
-   /*
-  .formulaireicone
-  {
-    margin-left: -15px;
-    padding-right:0px;
-    padding-left: 25px;
-    padding-top: 2px;
-    padding-bottom:10px;
-    background-color: #f2f2f2;
-    border-radius: 25px 0px 0px 25px;
-    height: 35px;
-    width: 70%;
-    border: 2px solid #f2f2f2;   
-  }*/ 
-
-  .numberpuce
-  {
-    display: flex;
-    list-style-type: none;
-    justify-content: row;
+    position: relative;
+    justify-content: center;
     align-items: center;
-    height: 42px;
-  margin-bottom:22px ;
-  margin-top: 15px;
-  padding-top: 3px;
-  width:95%;
+    height:220px ;
+   margin-left: 10px;
+    width: 80%; 
   }
-   .number
-  {
-    position: relative; 
-    margin-top: 13px;
+.numberpuce
+{
+  display: flex;
+  justify-content: flex-start;
+  height: 50px;
+  margin-bottom:15px ;
+  width:95%;
+  border: 1px solid #f2f2f2  ;
+ background-color: #f2f2f2;
+  border-radius: 25px 25px 25px 25px;
+  box-shadow: 2px 2px 2px #807d7d;
+  transform: scale(1); 
+         &:hover{  
+   transform:scale(1.1); 
+     background-color: $colour-primary-clair ;
+     color:$colour-first;
+    }
+}
+a.choix{
+  margin-top:20px;
+  padding-bottom: 0%;
+
+}
+
+    .choix
+    { margin-left: 10px;
+      padding-bottom: 10px;
+      margin-bottom: 10px;
+      padding-left: 10px;
+        font-size: 18px;
+      font-weight: bold;
+      margin-top: 14px;
+    &:hover
+    {
+       background-color: $colour-primary-clair ;
+    }
+  }
+  .number
+  {position: absolute; 
+    display: flex;
     color: white;
+    margin-left: -8px;
+    margin-top: 10px;
     font-weight: bold;
     font-size: 10px;
     background-color: blueviolet;
@@ -174,80 +148,24 @@ margin-left: 15px;
     padding:4px 7px 0px 7px;
     height: 17px;
     width: auto;
-  } 
-  .formulaireicone
-
-  { margin-left:-12px;
-    border: 1px solid #f2f2f2 ;
-    border-radius: 25px 0px 0px 25px;
-    height: 52px;
-    margin-top: 16px;
-  padding-left: 15px;
-    background-color:#f2f2f2;
-    padding-top: 0px;
-    padding-bottom: 5px;
-    justify-content: center;
   }
-.violet
-{margin-left:-12px;
-  border: 1px solid #DCA4ED ;
-  border-radius: 25px 0px 0px 25px;
-  height: 52px;
-  margin-top: 16px;
-padding-left: 15px;
-  padding-top: 0px;
-  padding-bottom: 2px;
-  justify-content: center;
-  background-color: #DCA4ED; 
-}
-  .iconechoix
-  { 
-     
-    font-size: 26px;
-     margin-left:10px;
-     margin-top: 10px;
-    padding-top:3px;
-    padding-bottom: 0px;
-    margin-bottom: 2px; 
-    padding-left: 12px;
-    padding-right: 10px;
-    width: 20%}
-  .iconetrois   
-        {
-      color: #9356DC;
-          }  
-  .choix
+  
+.iconechoix
+{ text-align: center;
+  font-size: 25px;
+   margin-left:20px;
+   margin-top: 14px; 
+  padding-bottom: 0px;
+  margin-bottom: 2px; 
+  padding-left: 20px;
+  padding-right: 10px;
+ &:hover
   {
-    padding-right: 30px;
-    margin-bottom: 0px;
-    padding-top: 14px;
-    padding-left: 20px;
-    height: 41px; 
-    justify-content: center;
-    text-align: center;
-    font-size: 17px;
-    font-weight: bold;
-    border: 1px solid #f2f2f2;
-    background-color: #f2f2f2;
-  border-radius:0px 25px 25px 0px;
-  } 
-  .choixtrois
-  {
-    padding-right: 30px;
-    margin-bottom: 0px;
-    padding-top: 14px;
-    padding-left: 20px;
-    height: 41px; 
-    justify-content: center;
-    text-align: center;
-    font-size: 17px;
-    font-weight: bold;
-    border: 1px solid #DCA4ED;
-    background-color: #DCA4ED;
-  border-radius:0px 25px 25px 0px;
-  } 
+     color: $colour-primary-clair ;
+  }
+} 
   /*main*/
-  #menu
+#menu
   {
     background-color: #f6f6f6;
     display: block;
@@ -258,21 +176,36 @@ padding-left: 15px;
   height: 40rem;
   & .card__image {
    
-    background-image: url("./assert/Lanoteenchanntee.jpg");
+    background-image: url("./assert/Lanoteenchantee.jpg");
     height: 15rem;
     background-size: cover;
   }
 }
 .blackandwhite
-
-/*
-  .photoseule
+{
+   
+  display: block;
+  flex-direction: column;
+  background-color: black;
+  color: white;
+  margin-left:0px ;
+  padding-left: 10px;
+}
+.contact
+{
+display:flex;
+color: white;
+margin-bottom: 5px;
+margin-left: 10px;
+} 
+  .nopuce 
   {
-    width :92%;
-    object-fit: contain;
-    height: 350px;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    border: none;
-  }*/
-  # sourceMappingURL=style.css.map
+    text-decoration: none;
+    color: white;
+  }
+    .footicon
+    {
+   margin-right: 15px;
+}
+
+ 
