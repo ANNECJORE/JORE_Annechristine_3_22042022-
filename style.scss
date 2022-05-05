@@ -8,12 +8,7 @@ body{
      text-align: center;
      font-size: 50px;
      font-family:'Shrikhand'; 
-     .logo_blanc
-     {
-      color: white;
-      font-size: 25px;
-      margin-top: 10px;
-     }
+   
     }
   .formulaireoù
   {   
@@ -75,11 +70,11 @@ body{
       transform: scale(1.15);
     }
 }
-main
+/*main
 {
   margin-right: 15px;
   margin-left: 15px;
-}
+}*/
  /* .fonctionnement */
   /* {
      display: flex; 
@@ -93,7 +88,7 @@ main
     position: relative;
     justify-content: center;
     align-items: center;
-    height:220px ;
+    height:240px ;
    margin-left: 10px;
     width: 80%; 
   }
@@ -101,7 +96,7 @@ main
 {
   display: flex;
   justify-content: flex-start;
-  height: 50px;
+  height: 55px;
   margin-bottom:15px ;
   width:95%;
   border: 1px solid #f2f2f2  ;
@@ -115,9 +110,10 @@ main
      color:$colour-first;
     }
 }
-a.choix{
+ .choix a{
   margin-top:20px;
   padding-bottom: 0%;
+  -moz-text-decoration-line: none;
 
 }
 
@@ -126,7 +122,7 @@ a.choix{
       padding-bottom: 10px;
       margin-bottom: 10px;
       padding-left: 10px;
-        font-size: 18px;
+        font-size: 17px;
       font-weight: bold;
       margin-top: 14px;
     &:hover
@@ -139,7 +135,7 @@ a.choix{
     display: flex;
     color: white;
     margin-left: -8px;
-    margin-top: 10px;
+    margin-top: 12px;
     font-weight: bold;
     font-size: 10px;
     background-color: blueviolet;
@@ -152,6 +148,7 @@ a.choix{
   
 .iconechoix
 { text-align: center;
+  color: #807d7d;
   font-size: 25px;
    margin-left:20px;
    margin-top: 14px; 
@@ -165,31 +162,118 @@ a.choix{
   }
 } 
   /*main*/
+h2 
+{
+margin-left: 15px;
+} 
 #menu
   {
-    background-color: #f6f6f6;
-    display: block;
+background-color: #f2f2f2;
+display: flex;
+flex-direction: column;
+width: 100%;
+padding-bottom:30px ;
+margin-bottom: 0px;
   }
+.menu__card
+{ 
+  margin-bottom:0px;
+    display: flex;
+    flex-direction: column;
+    background-color:#f2f2f2  ;
+    justify-content: center;
+    align-items: center;
+}
 .card
+ {
+  display: flex;
+ flex-direction: column;
+border: 2px solid black;
+ margin-top: 8px;
+ border-color: red;
+ border-radius: 20px 20px  20px 20px;
+ box-shadow: 2px 2px 2px #807d7d; 
+ width: 92%;
+} 
+.card__image 
 {
-  border: 2px solid black;
-  height: 40rem;
-  & .card__image {
-   
-    background-image: url("./assert/Lanoteenchantee.jpg");
-    height: 15rem;
-    background-size: cover;
+     height: 200px;
+   object-fit: cover;
+  width: 100%;
+  border-radius: 20px 20px 0px 0px;
   }
+.card__descrip
+{
+  display: flex;
+  justify-self: space-between;
+  color: black;
+  padding-left: 10px;
+  border: none;  
+  border-radius:  0px 0px 20px 20px;
+  height:90px;
+  background-color: white;
+      &.card__descrip
+      {
+        text-decoration-style: none;
+      }
+}
+.love
+{margin-left:190px;
+ margin-top:20px ;
+ align-items: center;
+  font-size: 30px;
+  border: 2px solid  green;
+}
+
+/*  .new
+{    
+  justify-content: center;
+  position: relative;
+  height: 30px; 
+  width: 80px ;
+  font-weight: bold;
+  border: 1px solid $colour-olive ;
+  background-color: $colour-olive;
+  color: $colour-olive-noyau;
+  margin-right: 15px;
+  margin-top: 15px;
+  padding-top: 3px;
+}
+ .new::before
+{}
+   
+
+.card_new
+{
+  position: relative;
+  display:flex;
+justify-items: stretch;
+ flex-direction: row;
+border: 1px solid #807d7d;
+}
+.card_descrip
+{
+  display: flex;
+
+}
+*/
+
+/*FOOTER*/  
+.logo_blanc
+{margin-top: 0px;
+  padding-top:5px ;
+ font-family: 'Shrikhand';
+  color: white;
 }
 .blackandwhite
-{
-   
+{ 
   display: block;
   flex-direction: column;
   background-color: black;
   color: white;
   margin-left:0px ;
   padding-left: 10px;
+padding-bottom: 20px;
 }
 .contact
 {
@@ -202,6 +286,7 @@ margin-left: 10px;
   {
     text-decoration: none;
     color: white;
+    
   }
     .footicon
     {
