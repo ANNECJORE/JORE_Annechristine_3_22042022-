@@ -192,6 +192,7 @@ h2 {
   border-radius: 20px 20px 20px 20px;
   box-shadow: 2px 2px 2px #807d7d;
   width: 92%;
+  position: relative;
 }
 
 .card__image {
@@ -224,24 +225,24 @@ h2 {
   font-size: 30px;
 }
 
-/*  .new
-{    
-  justify-content: center;
-  position: relative;
-  height: 30px; 
-  width: 80px ;
+.new {
+  align-items: end;
+  position: absolute;
+  height: 30px;
+  width: 80px;
   font-weight: bold;
-  border: 1px solid $colour-olive ;
-  background-color: $colour-olive;
-  color: $colour-olive-noyau;
+  border: 1px solid #99E2D0;
+  background-color: #99E2D0;
+  color: darken #99E2D0, 35%;
   margin-right: 15px;
   margin-top: 15px;
-  padding-top: 3px;
+  display: grid;
+  place-items: center;
+  right: 20px;
+  top: 10px;
 }
- .new::before
-{}
 
-
+/*
 .card_new
 {
   position: relative;
@@ -249,7 +250,7 @@ h2 {
 justify-items: stretch;
  flex-direction: row;
 border: 1px solid #807d7d;
-}
+}/*
 .card_descrip
 {
   display: flex;
