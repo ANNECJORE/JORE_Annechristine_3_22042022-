@@ -4,10 +4,21 @@ body {
   margin: 0px;
 }
 
-.logo {
+h1 {
+  margin: 0%;
+}
+
+.logo, .logo_menu {
+  height: 45px;
   text-align: center;
-  font-size: 50px;
+  font-size: 30px;
   font-family: "Shrikhand";
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.logo.logo_menu, .logo_menu.logo_menu {
+  height: 50px;
+  margin-left: 141px;
 }
 
 .formulaireoù {
@@ -74,11 +85,10 @@ body {
   margin-right: 15px;
   margin-left: 15px;
 }*/
-/* .fonctionnement */
-/* {
-   display: flex; 
-   flex-direction: column;   
-  /* align-items: center; */
+.fonctionnement {
+  margin-left: 15px;
+}
+
 .formulairechoix {
   display: flex;
   flex-direction: column;
@@ -86,7 +96,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 240px;
-  margin-left: 10px;
+  margin-left: 25px;
   width: 80%;
 }
 
@@ -108,13 +118,29 @@ body {
   color: #9356DC;
 }
 
+/*
+.choix1
+    {  
+      place-items: center;
+      margin-left: 10px;
+
+      margin-bottom: 10px;
+      padding-left: 10px;
+        font-size: 17px;
+      font-weight: bold;
+      margin-top: 14px;
+    } */
 .choix a {
   margin-top: 20px;
   padding-bottom: 0%;
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
   -moz-text-decoration-line: none;
 }
 
 .choix {
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
   margin-left: 10px;
   padding-bottom: 10px;
   margin-bottom: 10px;
@@ -163,6 +189,19 @@ h2 {
   margin-left: 15px;
 }
 
+h3, .plus {
+  font-family: "Shrikhand";
+  font-size: 18px;
+  margin-left: 5px;
+}
+h3.plus, .plus.plus {
+  font-size: 24px;
+  letter-spacing: 2px;
+  word-spacing: 4px;
+  font-stretch: expanded;
+  font-stretch: 100%;
+}
+
 #menu {
   background-color: #f2f2f2;
   display: flex;
@@ -184,6 +223,8 @@ h2 {
 
 .card {
   display: flex;
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
   flex-direction: column;
   border: 2px solid black;
   margin-top: 10px;
@@ -195,34 +236,40 @@ h2 {
   position: relative;
 }
 
-.card__image {
-  height: 200px;
+.imgmenu, .card__image {
+  height: 300px;
   -o-object-fit: cover;
      object-fit: cover;
-  width: 100%;
+  width: 120%;
+}
+.imgmenu.card__image, .card__image.card__image {
   border-radius: 20px 20px 0px 0px;
+  height: 200px;
+  width: 100%;
 }
 
 .card__descrip {
   display: flex;
-  justify-self: space-between;
+  justify-content: space-between;
   color: black;
   padding-left: 10px;
   border: none;
   border-radius: 0px 0px 20px 20px;
   height: 90px;
   background-color: white;
-}
-.card__descrip.card__descrip {
-  -webkit-text-decoration-style: none;
-          text-decoration-style: none;
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
 }
 
-.love {
-  margin-left: 230px;
+.love, .lovemenu {
+  margin-right: 20px;
   margin-top: 20px;
   align-items: center;
   font-size: 30px;
+}
+.love.lovemenu, .lovemenu.lovemenu {
+  margin-right: 25px;
+  padding-left: 0px;
 }
 
 .new {
@@ -242,21 +289,41 @@ h2 {
   top: 10px;
 }
 
-/*
-.card_new
-{
-  position: relative;
-  display:flex;
-justify-items: stretch;
- flex-direction: row;
-border: 1px solid #807d7d;
-}/*
-.card_descrip
-{
+.entetemenu {
+  margin-top: 8px;
   display: flex;
-
+  flex-direction: flex-start;
+  width: 100%;
+  height: 55px;
+  justify-content: center;
 }
-*/
+
+.fleche {
+  margin-top: 12px;
+  font-size: 25px;
+}
+
+.titreresto {
+  display: flex;
+  margin-top: -20px;
+  justify-content: space-around;
+  vertical-align: middle;
+  height: 100px;
+  padding-left: 15px;
+  background-color: #f2f2f2;
+  border-radius: 20px 20px 0px 0px;
+  padding-top: 20px;
+  position: absolute;
+  width: 100%;
+  margin-bottom: 0px;
+  padding: 0px;
+}
+
+.nameresto {
+  position: relative;
+  height: 360px;
+}
+
 /*FOOTER*/
 .logo_blanc {
   margin-top: 0px;
@@ -280,10 +347,13 @@ border: 1px solid #807d7d;
   color: white;
   margin-bottom: 5px;
   margin-left: 10px;
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
 }
 
 .nopuce {
-  text-decoration: none;
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
   color: white;
 }
 
