@@ -112,6 +112,7 @@ h1 {
   align-items: center;
   margin: 7px;
   height: 57px;
+  align-self: center;
   transform: scale(1);
   /* background:linear-gradient(-165deg,rgba(255,86,218,1.2) 8%, rgba(147,86,220,1.7));
    opacity: 1;*/
@@ -206,10 +207,10 @@ h1 {
   font-size: 17px;
   font-weight: bold;
   margin-top: 14px;
-  /*  &:hover
-    {
-       background-color: $colour-primary-clair ;
-    }*/
+  /* &:hover
+   {
+      background-color: $colour-primary-clair ;
+   }*/
 }
 
 .number {
@@ -338,6 +339,9 @@ h3.plus, .plus.plus {
   .card {
     width: 270px;
   }
+}
+.card:hover::before {
+  width: 100%;
 }
 
 .imgmenu, .card__image {
