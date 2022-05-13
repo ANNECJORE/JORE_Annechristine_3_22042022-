@@ -5,8 +5,8 @@ $colour-primary-clair:#e3c4ed;
 $colour-olive:rgb(165, 199, 165);
 $colour-olive-noyau:rgb(44, 62, 44);
 
-@mixin respond($breakpoints) {
-    @if $breakpoint == small { @media (max-width::667px)      
+/*@mixin respond($breakpoints) {
+    @if $breakpoints == small { @media (max-width::667px)      
 { @content
      };
-    }
+    }*/

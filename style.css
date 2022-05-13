@@ -1,6 +1,11 @@
 @charset "UTF-8";
+/*@mixin respond($breakpoints) {
+    @if $breakpoints == small { @media (max-width::667px)      
+{ @content
+     };
+    }*/
 .logo_blanc {
-  margin-top: 0px;
+  margin-bottom: 20px;
   padding-top: 5px;
   font-family: "Shrikhand";
   color: white;
@@ -337,7 +342,8 @@ h3.plus, .plus.plus {
 }
 @media screen and (min-width: 768px) and (max-width: 992px) {
   .card {
-    width: 270px;
+    width: 95%;
+    justify-content: center;
   }
 }
 .card:hover::before {
@@ -375,7 +381,7 @@ h3.plus, .plus.plus {
 }
 @media screen and (min-width: 768px) and (max-width: 992px) {
   .card__descrip {
-    height: 100px;
+    height: 133px;
   }
 }
 

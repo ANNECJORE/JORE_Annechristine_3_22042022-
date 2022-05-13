@@ -14,14 +14,14 @@ h1{
      font-size: 30px;
      font-family:'Shrikhand'; 
      margin-top: 5px;
-   margin-bottom: 5px;}
+   margin-bottom: 5px;
    &.logo_menu {
    @media  screen and (max-width:667px) {
     height: 50px;
   text-align: center;
   }
    }
-    
+  }
   .formulaireoù
   {   
       display: flex;
@@ -288,7 +288,8 @@ border: 2px solid black;
  width: 92%;
  position: relative;
  @media screen and (min-width: 768px) and (max-width:992px) {
-width:   270px;
+width:95%;
+justify-content: center;
  }
  &:hover {
    &::before {
@@ -325,9 +326,8 @@ width:   270px;
   background-color: white;
    text-decoration-line: none;
    @media screen and (min-width: 768px) and (max-width:992px) {
-     height: 100px;
+     height: 133px;
     
-     
    }
 
 }
