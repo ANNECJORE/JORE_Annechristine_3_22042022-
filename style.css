@@ -400,6 +400,12 @@ h3.plus, .plus.plus {
   margin-right: 25px;
   padding-left: 0px;
 }
+.love.lovemenu:hover, .lovemenu.lovemenu:hover {
+  color: transparent;
+}
+.love.lovemenu:hover .lovepink, .lovemenu.lovemenu:hover .lovepink {
+  color: pink;
+}
 
 .new {
   align-items: end;
@@ -469,9 +475,15 @@ h3.plus, .plus.plus {
 }
 
 .detailcarte {
+  display: flex;
   margin-top: -20px;
   background-color: #f2f2f2;
   justify-content: center;
+}
+@media screen and (max-width: 768px) {
+  .detailcarte {
+    flex-direction: column;
+  }
 }
 
 .plat {
@@ -484,6 +496,8 @@ h3.plus, .plus.plus {
 }
 
 .repas {
+  display: flex;
+  flex-direction: column;
   text-transform: uppercase;
   font-size: 18px;
   margin-left: 15px;
@@ -500,6 +514,7 @@ hr {
 
 .propo {
   display: flex;
+  flex-direction: column;
   justify-content: center;
 }
 @media screen and (max-width: 768px) {

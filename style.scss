@@ -344,9 +344,15 @@ justify-content: center;
   &.lovemenu {
   margin-right: 25px;
     padding-left:0px;
-  }
+  &:hover{
+    color: transparent;  
+  .lovepink
+{
+  color: pink;
+  } 
+ }
 }
-
+}
  .new
 {    
  align-items: end;
@@ -414,24 +420,34 @@ position:absolute;
   height: 360px;
  }
  .detailcarte
- {margin-top: -20px;
+
+ {display: flex;
+   margin-top: -20px;
    background-color: #f2f2f2;
   justify-content: center;
+  @media screen and (max-width: 768px) 
+  { flex-direction: column;
  }
+}
 .plat
-{margin-top: 0px;
+{
+  margin-top: 0px;
   padding-top: 15px;
 background-color: #f2f2f2;
 gap: 20px;
 margin-left: 20px;
 margin-right: 20px;
+
 }
 .repas
 {
+  display: flex;
+  flex-direction: column;
 text-transform: uppercase;
 font-size: 18px;
 margin-left :15px;
 padding-top: 5px;
+ 
 }
 hr
 { margin-bottom: 5px;
@@ -442,7 +458,8 @@ overflow: hidden;
 }
 .propo
 {
-  display:flex;
+  display:flex; 
+flex-direction: column;
   justify-content: center;
   @media screen and (max-width: 768px) 
   { flex-direction: column;
@@ -456,21 +473,21 @@ overflow: hidden;
   margin-bottom: 15px;
   padding: 5px;
   background-color: white;
-  border: 1px solid yellow;
+  border: 1px solid white;
   border-radius: 15px 15px 15px 15px ;
   height:auto; 
    margin-left: 10px;
-  box-shadow: 2px 2px 2px #f2f2f2;
-   
-
+  box-shadow: 2px 2px 2px $colour-ombre ;
    @media screen and (max-width: 768px) 
 { padding: 0%;
     width: 98%;
     padding-left: 15px;
   align-items: flex-start;
  } 
-}
-
+ &:hover{
+  box-shadow: 2px 2px 2px red;
+ }
+ }
 h4
 { 
 padding-top: 5px;
