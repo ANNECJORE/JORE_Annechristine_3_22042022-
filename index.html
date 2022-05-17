@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
-     <link rel="stylesheet"   href="style.css" /> 
+     <link rel="stylesheet"   href="public/style.css" /> 
     <title>Menus</title>
 <!-- media="screen and (max-width:667px)"-->
 </head>
@@ -33,7 +33,7 @@
     <button class="explorer">Explorez nos restaurants</button>
    </section>         
 </header>    
-<main> 
+ 
     
   <section class="fonctionnement">
    <h2>Fonctionnement</h2>
@@ -58,26 +58,44 @@
     </div> 
     </div>
   </section> 
- 
+ <main> 
 <section id="menu"> 
-     <h2>Restaurants</h2>
+     <h2 class="restomarg">Restaurants</h2>
 <div class="menu__card">
-    <a href="lpgmenu.html" class="card">
+    <article class="card" >
+    <a href="lpgmenu.html"  >
+        <img src="assert/palette.jpg" class="card__image" alt="la palette du gout">
+        <p class="new">NOUVEAU</p> 
+    </a> 
+             <div class="descrip"> 
+                   <h3>La palette du goût</h3>
+                    <p> Menilmontant</p>
+             <div class="jaime">
+                 <input type="checkbox"> 
+                  <i class="far fa-heart " aria-hidden="true"></i>
+                 <i class="fas fa-heart love1" aria-hidden="true"></i>    
+             </div> 
+             </div>
+    </article>
+              
+
+
+    <!--<a href="lpgmenu.html" class="card" >
     <img src="assert/palette.jpg" class="card__image" alt="la palette du gout">
     <p class="new">NOUVEAU</p> 
-    <div class="card__descrip">
-        <div>   
-        <h3>La palette du goût</h3>
-            <p> Menilmontant</p>
-        </div> 
-        <div>
-            <i class="far fa-heart flat love" aria-hidden="true"></i>
-        </div>
-    </div>
-    </a>
+         <div class="card__descrip"> 
+           <div>   
+               <h3>La palette du goût</h3>
+                <p> Menilmontant</p>
+         </div>   
+         <div class="jaime">
+             <i class="far fa-heart flat love" aria-hidden="true"></i>
+         </div> 
+         </div>
+          </a> -->
     <a href="lnemenu.html" class="card"> 
-            <img src="assert/Lanoteenchantee.jpg " class="card__image" alt="La note enchantée">   
-      <p class="new">NOUVEAU</p>
+        <img src="assert/Lanoteenchantee.jpg " class="card__image" alt="La note enchantée">   
+        <p class="new">NOUVEAU</p>
          <div class="card__descrip"> 
         <div>
         <h3>La note enchantée</h3>
@@ -88,8 +106,9 @@
         </div> 
     </div>
 </a>
+
 <a href="alfmenu.html" class="card">  
-        <img src="assert/alafrançaise.jpg" class="card__image" alt="A la française"> 
+    <img src="assert/alafrançaise.jpg" class="card__image" alt="A la française"> 
         <div class="card__descrip"> 
         <div>
         <h3>A la française</h3>
@@ -113,6 +132,7 @@
 </div>
     </a>
 </div>
+ 
     </section>
 </main>
 <footer> 

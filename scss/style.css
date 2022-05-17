@@ -1,4 +1,56 @@
 @charset "UTF-8";
+/* page accueil*/
+h1 {
+  margin: 0%;
+}
+
+.presentation {
+  text-align: center;
+  background-color: #f2f2f2;
+  padding-top: 35px;
+  padding-bottom: 20px;
+  margin-bottom: 0%;
+}
+
+.presentation_titre {
+  font-weight: 800;
+  font-size: 20px;
+  justify-content: stretch;
+  width: 100%;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+.presentation_detail {
+  align-items: center;
+  text-align: center;
+}
+
+h2 {
+  margin-left: 10px;
+}
+h2.restaumarg {
+  margin-left: 20px;
+}
+
+h3 {
+  font-family: "Shrikhand";
+  font-size: 18px;
+  margin-left: 5px;
+}
+
+.plus {
+  font-family: "Shrikhand";
+  font-size: 18px;
+  margin-left: 5px;
+  font-size: 24px;
+  letter-spacing: 2px;
+  word-spacing: 4px;
+  font-stretch: expanded;
+  font-stretch: 100%;
+}
+
 .logo_blanc {
   margin-bottom: 20px;
   padding-top: 5px;
@@ -15,9 +67,10 @@
   margin-left: 0px;
   padding-left: 10px;
   padding-bottom: 20px;
+  margin-top: -5px;
 }
 
-.contact {
+.contact, a {
   display: flex;
   color: white;
   margin-bottom: 5px;
@@ -38,11 +91,8 @@
 
 body {
   font-family: "Roboto", cursive;
+  margin-left: 0px;
   margin: 0px;
-}
-
-h1 {
-  margin: 0%;
 }
 
 .logo,
@@ -82,29 +132,6 @@ h1 {
   font-size: 20px;
 }
 
-.presentation {
-  text-align: center;
-  background-color: #f2f2f2;
-  padding-top: 35px;
-  padding-bottom: 20px;
-  margin-bottom: 0%;
-}
-
-.presentation_titre {
-  font-weight: 800;
-  font-size: 20px;
-  justify-content: stretch;
-  width: 100%;
-  align-items: center;
-  text-align: center;
-  margin-bottom: 0px;
-}
-
-.presentation_detail {
-  align-items: center;
-  text-align: center;
-}
-
 .explorer {
   color: white;
   border: none;
@@ -119,10 +146,10 @@ h1 {
   /* background:linear-gradient(-165deg,rgba(255,86,218,1.2) 8%, rgba(147,86,220,1.7));
     opacity: 1;*/
   background: radial-gradient(ellipse at 110% 90%, #9356DC, #FF79DA);
-  opacity: 1.1;
 }
 .explorer:hover {
   transform: scale(1.15);
+  opacity: 1;
 }
 
 /*main
@@ -131,9 +158,10 @@ h1 {
   margin-left: 15px;
 }*/
 .fonctionnement {
-  margin-left: 15px;
+  margin-left: 0px;
   margin-bottom: 15px;
   margin-top: 12px;
+  padding-left: 15px;
 }
 
 .formulairechoix {
@@ -243,45 +271,21 @@ h1 {
   margin-bottom: 2px;
   padding-left: 20px;
   padding-right: 10px;
-  /* &:hover
-
-  {
-     color: $colour-first ;
-  }*/
 }
 .iconechoix.iconetrois {
   color: #9356DC;
 }
 
 /*main*/
-h2 {
-  margin-left: 15px;
-}
-
-h3,
-.plus {
-  font-family: "Shrikhand";
-  font-size: 18px;
-  margin-left: 5px;
-}
-h3.plus,
-.plus.plus {
-  font-size: 24px;
-  letter-spacing: 2px;
-  word-spacing: 4px;
-  font-stretch: expanded;
-  font-stretch: 100%;
-}
-
 #menu {
   background-color: #f2f2f2;
   display: flex;
   flex-direction: column;
-  /**justify-content: center;*/
-  /*align-items: center;*/
   width: 100%;
   padding-bottom: 30px;
   margin-bottom: 0px;
+  padding-left: 0px;
+  height: auto;
 }
 @media screen and (min-width: 768px) and (max-width: 992px) {
   #menu {
@@ -298,7 +302,7 @@ h3.plus,
 }
 
 .menu__card {
-  margin-left: 25px;
+  margin-left: 15px;
   margin-bottom: 10px;
   display: flex;
   justify-content: space-around;
@@ -309,6 +313,7 @@ h3.plus,
   padding-bottom: 10px;
   width: 90%;
   gap: 15px;
+  padding-left: 0px;
 }
 @media screen and (min-width: 768px) and (max-width: 992px) {
   .menu__card {
@@ -327,6 +332,14 @@ h3.plus,
   }
 }
 
+.essai {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  width: 200px;
+}
+
 .card {
   display: flex;
   -webkit-text-decoration-line: none;
@@ -338,8 +351,8 @@ h3.plus,
   border-color: red;
   border-radius: 20px 20px 20px 20px;
   box-shadow: 2px 2px 2px #807d7d;
-  width: 92%;
-  position: relative;
+  width: 100%;
+  padding-left: 0px;
 }
 @media screen and (min-width: 768px) and (max-width: 992px) {
   .card {
@@ -347,22 +360,33 @@ h3.plus,
     justify-content: center;
   }
 }
-.card:hover::before {
+
+.card1 {
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
+  border: 2px solid rebeccapurple;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  /*border-color: red;*/
+  border-radius: 20px 20px 0px 0px;
+  box-shadow: 2px 2px 2px #807d7d;
   width: 100%;
+  padding-left: 0px;
 }
 
 .imgmenu,
 .card__image {
   height: 300px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  overflow: hidden;
   width: 100%;
+  margin: 0px;
 }
 .imgmenu.card__image,
 .card__image.card__image {
   border-radius: 20px 20px 0px 0px;
   height: 200px;
   width: 100%;
+  position: relative;
 }
 @media screen and (min-width: 768px) and (max-width: 992px) {
   .imgmenu.card__image,
@@ -389,30 +413,110 @@ h3.plus,
   }
 }
 
-.love,
-.lovemenu {
-  margin-right: 20px;
-  margin-top: 20px;
+.jaime {
+  position: relative;
   align-items: center;
+  -webkit-animation: 5s;
+          animation: 5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.love1 {
+  position: absolute;
+  overflow: hidden;
+  font-size: 20px;
+  opacity: 0;
+  transition: 0.6s;
+  transform: scale(1.1);
+  background: radial-gradient(ellipse at 110% 90%, #9356DC, #FF79DA);
+}
+
+.fas {
+  color: transparent;
+  opacity: 0;
+  transition-duration: 0.5s;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+  /*ON DEFINI UN BACKGROUND*/
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 0;
+}
+.fas:hover.fas {
+  opacity: 1;
+}
+
+.descrip {
+  position: relative;
+  background-color: white;
+}
+.descrip.descrip i {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  right: 10px;
+  top: 50%;
+}
+
+input {
+  position: absolute;
+  width: 10rem;
+  height: 10rem;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 3;
+}
+
+/*QUAND LA CHECKBOX EST CHECK*/
+input:checked ~ .far {
+  transition-duration: 0.5s;
+  opacity: 0;
+}
+
+/*QUAND LA CHECKBOX EST CHECK*/
+input:checked ~ .fas {
+  transition-duration: 0.5s;
+  opacity: 1;
+}
+
+.love {
+  pointer-events: none;
   font-size: 30px;
-}
-@media screen and (min-width: 768px) and (max-width: 992px) {
-  .love,
-.lovemenu {
-    margin-right: 2px;
-  }
-}
-.love.lovemenu,
-.lovemenu.lovemenu {
   margin-right: 25px;
   padding-left: 0px;
 }
-.love.lovemenu:hover,
-.lovemenu.lovemenu:hover {
+.love.love > a {
+  pointer-events: none;
+}
+.love.love > a :hover {
+  color: palevioletred;
+}
+
+.lovemenu {
+  /*  margin-right: 20px;*/
+  margin-top: 20px;
+  align-items: center;
+  font-size: 30px;
+  margin-right: 25px;
+  padding-left: 0px;
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .lovemenu {
+    margin-right: 2px;
+  }
+}
+.lovemenu:hover {
   color: transparent;
 }
-.love.lovemenu:hover .lovepink,
-.lovemenu.lovemenu:hover .lovepink {
+
+.lovepink {
+  position: absolute;
+  font-size: 30px;
+  color: blue;
+}
+.lovepink:hover {
   color: pink;
 }
 
@@ -424,7 +528,7 @@ h3.plus,
   font-weight: bold;
   border: 1px solid #99E2D0;
   background-color: #99E2D0;
-  color: darken #99E2D0, 35%;
+  color: darken #99E2D0, 55%;
   margin-right: 15px;
   margin-top: 15px;
   display: grid;
@@ -455,6 +559,7 @@ h3.plus,
 .fleche {
   margin-top: 12px;
   font-size: 25px;
+  color: #000;
 }
 @media screen and (max-width: 768px) {
   .fleche {
@@ -514,11 +619,12 @@ h3.plus,
 }
 
 hr {
-  margin-bottom: 5px;
+  margin-bottom: 15px;
   align-items: flex-start;
   border-top: 2px solid #99E2D0;
+  margin-left: 0px;
   width: 30px;
-  overflow: hidden;
+  margin-top: 0;
 }
 
 .propo {
@@ -534,8 +640,7 @@ hr {
 }
 
 .commande {
-  justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   margin-bottom: 15px;
   padding: 5px;
   background-color: white;
@@ -563,7 +668,7 @@ h4 {
   margin-top: 5px;
   font-size: 16px;
   font-weight: bolder;
-  text-align: center;
+  text-align: left;
 }
 @media screen and (max-width: 768px) {
   h4 {
@@ -573,8 +678,10 @@ h4 {
 }
 
 .option {
-  vertical-align: middle;
-  padding-bottom: 0%;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 10px;
+  padding-bottom: 15px;
 }
 @media screen and (max-width: 768px) {
   .option {
@@ -586,7 +693,7 @@ h4 {
 }
 
 .complement {
-  text-align: center;
+  text-align: start;
   margin: 0%;
 }
 @media screen and (max-width: 768px) {
@@ -596,7 +703,7 @@ h4 {
 }
 
 .prix {
-  text-align: center;
+  text-align: end;
   font-weight: bold;
   padding-bottom: 0%;
 }
@@ -612,6 +719,11 @@ h4 {
   align-items: center;
   display: block;
   padding-bottom: 20px;
+}
+
+.jemande {
+  text-align: center;
+  justify-content: center;
 }
 
 /*FOOTER*/
