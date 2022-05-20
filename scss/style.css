@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /* page accueil*/
 h1 {
-  margin: 0%;
+  margin: 0px;
 }
 
 .presentation {
@@ -136,20 +136,21 @@ body {
   color: white;
   border: none;
   cursor: pointer;
-  border-radius: 20px 20px 20px 20px;
+  border-radius: 25px 25px 25px 25px;
   font-size: 18px;
   align-items: center;
-  margin: 7px;
-  height: 57px;
-  align-self: center;
+  vertical-align: middle;
+  padding: 2%;
+  height: 55px;
+  justify-items: center;
   transform: scale(1);
-  /* background:linear-gradient(-165deg,rgba(255,86,218,1.2) 8%, rgba(147,86,220,1.7));
-    opacity: 1;*/
+  padding-top: 17px;
   background: radial-gradient(ellipse at 110% 90%, #9356DC, #FF79DA);
 }
 .explorer:hover {
   transform: scale(1.15);
-  opacity: 1;
+  box-shadow: 4px 4px 4px #6b6a6a;
+  opacity: 0.6;
 }
 
 /*main
@@ -219,18 +220,15 @@ body {
       font-weight: bold;
       margin-top: 14px;
     } */
-.choix a {
+/*.choix a {
   margin-top: 15px;
   padding-top: 3px;
   padding-bottom: 0%;
-  -webkit-text-decoration-line: none;
-          text-decoration-line: none;
+  text-decoration-line: none;
   -moz-text-decoration-line: none;
 }
-
+*/
 .choix {
-  -webkit-text-decoration-line: none;
-          text-decoration-line: none;
   margin-left: 10px;
   height: auto;
   padding-bottom: 10px;
@@ -352,6 +350,7 @@ body {
   border-radius: 20px 20px 20px 20px;
   box-shadow: 2px 2px 2px #807d7d;
   width: 100%;
+  height: 300px;
   padding-left: 0px;
 }
 @media screen and (min-width: 768px) and (max-width: 992px) {
@@ -374,23 +373,24 @@ body {
   padding-left: 0px;
 }
 
-.imgmenu,
-.card__image {
+.imgmenu {
   height: 300px;
   overflow: hidden;
   width: 100%;
   margin: 0px;
 }
-.imgmenu.card__image,
-.card__image.card__image {
+
+.card__image {
   border-radius: 20px 20px 0px 0px;
-  height: 200px;
+  height: 100%;
   width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  overflow: hidden;
   position: relative;
 }
 @media screen and (min-width: 768px) and (max-width: 992px) {
-  .imgmenu.card__image,
-.card__image.card__image {
+  .card__image {
     height: 200px;
   }
 }
@@ -432,7 +432,7 @@ body {
   background: radial-gradient(ellipse at 110% 90%, #9356DC, #FF79DA);
 }
 
-.fas {
+.fa-heart {
   color: transparent;
   opacity: 0;
   transition-duration: 0.5s;
@@ -441,9 +441,8 @@ body {
   -webkit-background-clip: text;
           background-clip: text;
   -webkit-text-fill-color: transparent;
-  opacity: 0;
 }
-.fas:hover.fas {
+.fa-heart:hover.fa-heart {
   opacity: 1;
 }
 
@@ -501,6 +500,7 @@ input:checked ~ .fas {
   font-size: 30px;
   margin-right: 25px;
   padding-left: 0px;
+  position: relative;
 }
 @media screen and (min-width: 768px) and (max-width: 992px) {
   .lovemenu {
@@ -514,7 +514,7 @@ input:checked ~ .fas {
 .lovepink {
   position: absolute;
   font-size: 30px;
-  color: blue;
+  color: pink;
 }
 .lovepink:hover {
   color: pink;
@@ -528,7 +528,8 @@ input:checked ~ .fas {
   font-weight: bold;
   border: 1px solid #99E2D0;
   background-color: #99E2D0;
-  color: darken #99E2D0, 55%;
+  color: green;
+  /*:darken ($colour-tertiaire,55%);*/
   margin-right: 15px;
   margin-top: 15px;
   display: grid;
@@ -616,6 +617,7 @@ input:checked ~ .fas {
   font-size: 18px;
   margin-left: 15px;
   padding-top: 5px;
+  margin-bottom: 0px;
 }
 
 hr {
@@ -649,6 +651,9 @@ hr {
   height: auto;
   margin-left: 10px;
   box-shadow: 2px 2px 2px #858383;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 @media screen and (max-width: 768px) {
   .commande {
@@ -721,9 +726,16 @@ h4 {
   padding-bottom: 20px;
 }
 
-.jemande {
-  text-align: center;
-  justify-content: center;
+.choisissez {
+  background-color: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+}
+
+.jeveux {
+  margin: 2%;
+  display: block;
+  align-items: center;
 }
 
 /*FOOTER*/

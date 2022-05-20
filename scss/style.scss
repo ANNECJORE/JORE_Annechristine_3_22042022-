@@ -9,7 +9,6 @@ body {
   margin: 0px;
 }
 
- 
 .logo,
 .logo_menu {
   height: 45px;
@@ -52,22 +51,20 @@ body {
   color: white;
   border: none;
   cursor: pointer;
-  border-radius: 20px 20px 20px 20px;
+  border-radius: 25px 25px 25px 25px;
   font-size: 18px;
   align-items: center;
-  margin: 7px;
-  height: 57px;
-  align-self: center;
+  vertical-align: middle;
+  padding:2%;
+  height: 55px;
+  justify-items: center;
   transform: scale(1);
-
-  /* background:linear-gradient(-165deg,rgba(255,86,218,1.2) 8%, rgba(147,86,220,1.7));
-    opacity: 1;*/
+  padding-top: 17px;
   background: radial-gradient(ellipse at 110% 90%, $colour-first, $colour-secondary);
-   
-
   &:hover {
     transform: scale(1.15);
-    opacity:1;
+    box-shadow: 4px 4px 4px darken($colour-gris,10%);
+    opacity:0.6;
   }
 }
 
@@ -137,16 +134,16 @@ body {
       font-weight: bold;
       margin-top: 14px;
     } */
-.choix a {
+/*.choix a {
   margin-top: 15px;
   padding-top: 3px;
   padding-bottom: 0%;
   text-decoration-line: none;
   -moz-text-decoration-line: none;
 }
-
+*/
 .choix {
-  text-decoration-line: none;
+ 
   margin-left: 10px;
   height: auto;
   padding-bottom: 10px;
@@ -159,7 +156,7 @@ body {
     {
        background-color: $colour-primary-clair ;
     }*/
-}
+} 
 
 .number {
   position: absolute;
@@ -187,7 +184,6 @@ body {
   margin-bottom: 2px;
   padding-left: 20px;
   padding-right: 10px;
-
   &.iconetrois {
     color: $colour-first;
   }
@@ -264,6 +260,7 @@ body {
   border-radius: 20px 20px 20px 20px;
   box-shadow: 2px 2px 2px #807d7d;
   width: 100%;
+  height: 300px;
   padding-left: 0px;
   @media screen and (min-width: 768px) and (max-width:992px) {
     width: 95%;
@@ -287,22 +284,26 @@ body {
   padding-left: 0px;
  
   }
-.imgmenu,
-.card__image {
+.imgmenu
+ /*.card__image */{
   height: 300px;
   overflow: hidden; 
   width: 100%;
   margin: 0px;
-  &.card__image {
+}
+
+  .card__image {
     border-radius: 20px 20px 0px 0px;
-    height: 200px;
+    height: 100%;
     width: 100%;
+    object-fit:cover;
+    overflow: hidden;
 position: relative;
     @media screen and (min-width: 768px) and (max-width:992px) {
       height: 200px;
     }
   }
-}
+
 
 .card__descrip {
   display: flex;
@@ -337,15 +338,15 @@ position: relative;
   transform: scale(1.1);
   background: radial-gradient(ellipse at 110% 90%, $colour-first, $colour-secondary);
 }
- .fas
+ .fa-heart
 { color: transparent;
   opacity: 0;
   transition-duration: 0.5s;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));/*ON DEFINI UN BACKGROUND*/ 
  background-clip: text ;
  -webkit-text-fill-color: transparent;
- opacity: 0;
- &:hover.fas {
+ 
+ &:hover.fa-heart {
    opacity: 1;
  }
 } 
@@ -401,7 +402,7 @@ input:checked ~ .fas{
   font-size: 30px;
     margin-right: 25px;
     padding-left: 0px;
-    
+    position: relative;
   @media screen and (min-width: 768px) and (max-width:992px) {
     margin-right: 2px;
   }
@@ -414,7 +415,7 @@ input:checked ~ .fas{
 .lovepink
 {position: absolute;
   font-size: 30px;
-  color:blue;
+  color:pink;
 
   &:hover {color: pink;
   }
@@ -427,7 +428,7 @@ input:checked ~ .fas{
   font-weight: bold;
   border: 1px solid $colour-tertiaire ;
   background-color: $colour-tertiaire;
-  color: darken ($colour-tertiaire,55%);
+  color: green ;/*:darken ($colour-tertiaire,55%);*/
   margin-right: 15px;
   margin-top: 15px;
   display: grid;
@@ -457,7 +458,7 @@ input:checked ~ .fas{
 .fleche {
   margin-top: 12px;
   font-size: 25px;
-color: #000;
+  color: #000;
   @media screen and (max-width: 768px) {
     margin-left: -30px;
   }
@@ -512,7 +513,7 @@ color: #000;
   font-size: 18px;
   margin-left: 15px;
   padding-top: 5px;
-
+  margin-bottom: 0px;
 }
 
 hr {
@@ -536,9 +537,7 @@ hr {
   }
 }
 
-.commande {
-
-  
+.commande { 
   align-items: flex-start;
   margin-bottom: 15px;
   padding: 5px;
@@ -548,6 +547,9 @@ hr {
   height: auto;
   margin-left: 10px;
   box-shadow: 2px 2px 2px $colour-gris;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 
   @media screen and (max-width: 768px) {
     padding: 0%;
@@ -568,7 +570,7 @@ h4 {
   font-size: 16px;
   font-weight: bolder;
   text-align: left;
-
+ 
   @media screen and (max-width: 768px) {
     align-items: start;
     text-align: left;
@@ -592,7 +594,7 @@ h4 {
 .complement {
   text-align: start;
   margin: 0%;
-
+ 
   @media screen and (max-width: 768px) {
     align-self: start;
   }
@@ -615,12 +617,18 @@ h4 {
   display: block;
   padding-bottom: 20px;
 }
-.jemande
+.choisissez
+ {
+  background-color: #f2f2f2; 
+  display: flex;
+   flex-direction: column;
+ } 
+.jeveux
 {
+  margin: 2%;
+  display: block;  
   text-align: center;
-  justify-content: center;
-}
-
+} 
 /*FOOTER*/
 /*.logo_blanc
 {margin-top: 0px;

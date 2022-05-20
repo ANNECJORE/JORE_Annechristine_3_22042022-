@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
-     <link rel="stylesheet"   href="public/style.css" /> 
+     <link rel="stylesheet"   href="scss/style.css" /> 
     <title>Menus</title>
 <!-- media="screen and (max-width:667px)"-->
 </head>
@@ -53,8 +53,7 @@
     <div class="numberpuce3">
         <span class="number">3</span>
          <i class="fas fa-store iconechoix iconetrois"></i> 
-         <p class="choix">Dégustez au restaurant</p>
-        
+         <p class="choix">Dégustez au restaurant</p>     
     </div> 
     </div>
   </section> 
@@ -62,25 +61,23 @@
 <section id="menu"> 
      <h2 class="restomarg">Restaurants</h2>
 <div class="menu__card">
-    <article class="card" >
-    <a href="lpgmenu.html"  >
+   <!-- <article class="card" >
+    <a href="lpgmenu.html"   >
         <img src="assert/palette.jpg" class="card__image" alt="la palette du gout">
         <p class="new">NOUVEAU</p> 
-    </a> 
              <div class="descrip"> 
                    <h3>La palette du goût</h3>
                     <p> Menilmontant</p>
+             </a>
              <div class="jaime">
                  <input type="checkbox"> 
                   <i class="far fa-heart " aria-hidden="true"></i>
                  <i class="fas fa-heart love1" aria-hidden="true"></i>    
              </div> 
              </div>
-    </article>
-              
-
-
-    <!--<a href="lpgmenu.html" class="card" >
+    </article>-->
+            
+     <a href="lpgmenu.html" class="card" >
     <img src="assert/palette.jpg" class="card__image" alt="la palette du gout">
     <p class="new">NOUVEAU</p> 
          <div class="card__descrip"> 
@@ -92,7 +89,7 @@
              <i class="far fa-heart flat love" aria-hidden="true"></i>
          </div> 
          </div>
-          </a> -->
+          </a>  
     <a href="lnemenu.html" class="card"> 
         <img src="assert/Lanoteenchantee.jpg " class="card__image" alt="La note enchantée">   
         <p class="new">NOUVEAU</p>
@@ -106,19 +103,22 @@
         </div> 
     </div>
 </a>
-
-<a href="alfmenu.html" class="card">  
+<div class="card">
+<a href="alfmenu.html" >  
     <img src="assert/alafrançaise.jpg" class="card__image" alt="A la française"> 
-        <div class="card__descrip"> 
+       </a>  
+       <div class="card__descrip"> 
         <div>
         <h3>A la française</h3>
         <p>Cité rouge</p>
         </div>
+   
         <div>
         <i class="far fa-heart love" aria-hidden="true"></i>
         </div>
     </div>  
-</a>
+
+</div>
     <a href="ldsmenu.html" class="card"> 
      <img src="assert/ledelicedessens.jpg" class="card__image" alt="Le délice des sens">   
     <div class="card__descrip"> 
