@@ -1,127 +1,16 @@
 @import "./base/titres";
 @import "./Utils/variable";
 @import"./layout/footer";
-
+@import"./layout/header";
+@import"./layout/intro";
+@import"./composants/boutons";
 
 body {
   font-family: 'Roboto', cursive;
   margin-left: 0px;
   margin: 0px;
 }
-
-.logo,
-.logo_menu {
-  height: 45px;
-  text-align: center;
-  font-size: 30px;
-  font-family: 'Shrikhand';
-  margin-top: 5px;
-  margin-bottom: 5px;
-
-  &.logo_menu {
-    @media screen and (max-width:667px) {
-      height: 50px;
-      text-align: center;
-    }
-  }
-}
-
-.formulaireoù {
-  display: flex;
-  background-color: rgb(199, 196, 196);
-  justify-content: center;
-  height: 50px;
-  border-top: 2px solid grey;
-  width: 100%;
-  padding-bottom: 5px;
-
-  .iconegeo {
-    align-items: center;
-    margin-right: 20px;
-    margin-top: 17px;
-    font-size: 18px;
-  }
-}
-
-.lieu {
-  font-size: 20px;
-}
  
-.explorer {
-  color: white;
-  border: none;
-  cursor: pointer;
-  border-radius: 25px 25px 25px 25px;
-  font-size: 18px;
-  align-items: center;
-  vertical-align: middle;
-  padding:2%;
-  height: 55px;
-  justify-items: center;
-  transform: scale(1);
-  padding-top: 17px;
-  background: radial-gradient(ellipse at 110% 90%, $colour-first, $colour-secondary);
-  &:hover {
-    transform: scale(1.15);
-    box-shadow: 4px 4px 4px darken($colour-gris,10%);
-    opacity:0.6;
-  }
-}
-
-/*main
-{
-  margin-right: 15px;
-  margin-left: 15px;
-}*/
-.fonctionnement {
-  margin-left: 0px;
-  margin-bottom: 15px;
-  margin-top: 12px;
-  padding-left: 15px;
-}
-
-.formulairechoix {
-  display: flex;
-  height: auto;
-  padding-left: 25px;
-  gap: 25px;
-  position: relative;
-  justify-content: center;
-  margin-left: 0px;
-  width: 90%;
-  margin-bottom: 12px;
-
-  @media screen and (max-width:667px) {
-    flex-direction: column;
-    height: 240px;
-    gap: 10px;
-  }
-}
-
-.numberpuce,
-.numberpuce3 {
-  display: flex;
-  justify-content: flex-start;
-  height: auto;
-  margin-bottom: 15px;
-  width: 95%;
-  border: 1px solid #f2f2f2;
-  background-color: #f2f2f2;
-  border-radius: 19px 19px 19px 19px;
-  box-shadow: 2px 2px 2px #807d7d;
-  transform: scale(1);
-
-  /*     &:hover{  
-   transform:scale(1.1); 
-     background-color: $colour-primary-clair ;
-     color:$colour-first;
-    }*/
-  &.numberpuce3 {
-    color: $colour-first;
-    background-color: $colour-primary-clair;
-  }
-}
-
 /*
 .choix1
     {  
@@ -142,55 +31,8 @@ body {
   -moz-text-decoration-line: none;
 }
 */
-.choix {
- 
-  margin-left: 10px;
-  height: auto;
-  padding-bottom: 10px;
-  margin-bottom: 10px;
-  padding-left: 10px;
-  font-size: 17px;
-  font-weight: bold;
-  margin-top: 14px;
-  /* &:hover
-    {
-       background-color: $colour-primary-clair ;
-    }*/
-} 
 
-.number {
-  position: absolute;
-  display: flex;
-  color: white;
-  margin-left: -8px;
-  margin-top: 12px;
-  font-weight: bold;
-  font-size: 10px;
-  background-color: blueviolet;
-  border: 2px solid blueviolet;
-  border-radius: 50%;
-  padding: 4px 7px 0px 7px;
-  height: 17px;
-  width: auto;
-}
 
-.iconechoix {
-  text-align: center;
-  color: #807d7d;
-  font-size: 25px;
-  margin-left: 20px;
-  margin-top: 14px;
-  padding-bottom: 0px;
-  margin-bottom: 2px;
-  padding-left: 20px;
-  padding-right: 10px;
-  &.iconetrois {
-    color: $colour-first;
-  }
-}
-
-/*main*/
- 
  
 
 #menu {
@@ -215,6 +57,7 @@ body {
 }
 
 .menu__card{
+ 
   margin-left: 15px;
   margin-bottom: 10px;
   display: flex;
@@ -236,11 +79,11 @@ body {
     margin-right: 15px;
     height: auto;
   }
-
   @media screen and (max-width:667px) {
     flex-direction: column;
   }
 }
+ 
 .essai
 {position: relative;
   display: flex;
@@ -250,6 +93,7 @@ body {
  
 }
 .card {
+ position: relative;
   display: flex;
   text-decoration-line: none;
   flex-direction: column;
@@ -287,18 +131,19 @@ body {
 .imgmenu
  /*.card__image */{
   height: 300px;
+  object-fit: cover;
   overflow: hidden; 
   width: 100%;
   margin: 0px;
 }
 
-  .card__image {
+  .cardimage {
     border-radius: 20px 20px 0px 0px;
     height: 100%;
     width: 100%;
     object-fit:cover;
     overflow: hidden;
-position: relative;
+ 
     @media screen and (min-width: 768px) and (max-width:992px) {
       height: 200px;
     }
@@ -314,11 +159,22 @@ position: relative;
   border-radius: 0px 0px 20px 20px;
   height: 90px;
   background-color: white;
-  text-decoration-line: none;
+  
   @media screen and (min-width: 768px) and (max-width:992px) {
     height: 133px;
-
   }
+}
+
+.themust
+{
+  display: flex;
+  justify-content: space-between;
+  color: black;
+  padding-left: 10px;
+  border: none;
+  border-radius: 0px 0px 20px 20px;
+  height: 90px;
+  background-color: white;
 }
  .jaime
  {position: relative;
@@ -350,8 +206,9 @@ position: relative;
    opacity: 1;
  }
 } 
-.descrip{ position: relative; 
-background-color: white;
+.descrip
+{ position: relative; 
+background-color: red;
 &.descrip i
 {
   position: absolute;
@@ -402,7 +259,7 @@ input:checked ~ .fas{
   font-size: 30px;
     margin-right: 25px;
     padding-left: 0px;
-    position: relative;
+  
   @media screen and (min-width: 768px) and (max-width:992px) {
     margin-right: 2px;
   }
@@ -428,7 +285,7 @@ input:checked ~ .fas{
   font-weight: bold;
   border: 1px solid $colour-tertiaire ;
   background-color: $colour-tertiaire;
-  color: green ;/*:darken ($colour-tertiaire,55%);*/
+  color :darken ($colour-tertiaire,55%); 
   margin-right: 15px;
   margin-top: 15px;
   display: grid;
@@ -455,15 +312,7 @@ input:checked ~ .fas{
   }
 }
 
-.fleche {
-  margin-top: 12px;
-  font-size: 25px;
-  color: #000;
-  @media screen and (max-width: 768px) {
-    margin-left: -30px;
-  }
-}
-
+ 
 .titreresto {
   display: flex;
   margin-top: -20px;
@@ -490,7 +339,7 @@ input:checked ~ .fas{
   margin-top: -20px;
   background-color: #f2f2f2;
   justify-content: center;
-
+width: 100%;
   @media screen and (max-width: 768px) {
     flex-direction: column;
   }
@@ -520,9 +369,9 @@ hr {
   margin-bottom: 15px;
   align-items: flex-start;
   border-top: 2px solid $colour-tertiaire;
- margin-left: 0px;
-  width: 30px;
-  margin-top: 0;
+ margin-left: 12px;
+  width: 34px;
+  margin-top: 5px;
   
 }
 
@@ -559,7 +408,7 @@ hr {
   }
 
   &:hover {
-    box-shadow: 2px 2px 2px red;
+    box-shadow: 2px 2px 2px darken($colour-gris,30%);
   }
 }
 
@@ -619,13 +468,17 @@ h4 {
 }
 .choisissez
  {
+   width: 100%;
   background-color: #f2f2f2; 
   display: flex;
    flex-direction: column;
+   height: auto;
  } 
 .jeveux
 {
-  margin: 2%;
+  background-color: #f2f2f2;
+  margin: 0%;
+  padding:3% ;
   display: block;  
   text-align: center;
 } 

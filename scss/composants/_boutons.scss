@@ -1,0 +1,22 @@
+/*bouton violet*/
+.explorer {
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 25px 25px 25px 25px;
+    box-shadow: 2px 2px 2px $colour-gris;
+    font-size: 18px;
+    align-items: center;
+    vertical-align: middle;
+    padding:2%;
+    height: 55px;
+    justify-items: center;
+    transform: scale(1);
+    padding-top: 17px;
+    background: radial-gradient(ellipse at 110% 90%, $colour-first, $colour-secondary);
+    &:hover {
+      transform: scale(1.15);
+      box-shadow: 4px 4px 4px darken($colour-gris,10%);
+      opacity:0.6;
+    }
+  }

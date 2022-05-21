@@ -89,12 +89,7 @@ h3 {
   margin-right: 15px;
 }
 
-body {
-  font-family: "Roboto", cursive;
-  margin-left: 0px;
-  margin: 0px;
-}
-
+/*les logos*/
 .logo,
 .logo_menu {
   height: 45px;
@@ -112,6 +107,19 @@ body {
   }
 }
 
+/*les flèches*/
+.fleche {
+  margin-top: 12px;
+  font-size: 25px;
+  color: #000;
+}
+@media screen and (max-width: 768px) {
+  .fleche {
+    margin-left: -30px;
+  }
+}
+
+/*formulaire arrivée*/
 .formulaireoù {
   display: flex;
   background-color: rgb(199, 196, 196);
@@ -132,32 +140,7 @@ body {
   font-size: 20px;
 }
 
-.explorer {
-  color: white;
-  border: none;
-  cursor: pointer;
-  border-radius: 25px 25px 25px 25px;
-  font-size: 18px;
-  align-items: center;
-  vertical-align: middle;
-  padding: 2%;
-  height: 55px;
-  justify-items: center;
-  transform: scale(1);
-  padding-top: 17px;
-  background: radial-gradient(ellipse at 110% 90%, #9356DC, #FF79DA);
-}
-.explorer:hover {
-  transform: scale(1.15);
-  box-shadow: 4px 4px 4px #6b6a6a;
-  opacity: 0.6;
-}
-
-/*main
-{
-  margin-right: 15px;
-  margin-left: 15px;
-}*/
+/*fonctionnement ACCUEIL*/
 .fonctionnement {
   margin-left: 0px;
   margin-bottom: 15px;
@@ -195,52 +178,11 @@ body {
   background-color: #f2f2f2;
   border-radius: 19px 19px 19px 19px;
   box-shadow: 2px 2px 2px #807d7d;
-  transform: scale(1);
-  /*     &:hover{  
-   transform:scale(1.1); 
-     background-color: $colour-primary-clair ;
-     color:$colour-first;
-    }*/
 }
 .numberpuce.numberpuce3,
 .numberpuce3.numberpuce3 {
   color: #9356DC;
   background-color: #e3c4ed;
-}
-
-/*
-.choix1
-    {  
-      place-items: center;
-      margin-left: 10px;
-
-      margin-bottom: 10px;
-      padding-left: 10px;
-        font-size: 17px;
-      font-weight: bold;
-      margin-top: 14px;
-    } */
-/*.choix a {
-  margin-top: 15px;
-  padding-top: 3px;
-  padding-bottom: 0%;
-  text-decoration-line: none;
-  -moz-text-decoration-line: none;
-}
-*/
-.choix {
-  margin-left: 10px;
-  height: auto;
-  padding-bottom: 10px;
-  margin-bottom: 10px;
-  padding-left: 10px;
-  font-size: 17px;
-  font-weight: bold;
-  margin-top: 14px;
-  /* &:hover
-    {
-       background-color: $colour-primary-clair ;
-    }*/
 }
 
 .number {
@@ -274,7 +216,66 @@ body {
   color: #9356DC;
 }
 
-/*main*/
+.choix {
+  margin-left: 10px;
+  height: auto;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  padding-left: 10px;
+  font-size: 17px;
+  font-weight: bold;
+  margin-top: 14px;
+}
+
+/*bouton violet*/
+.explorer {
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 25px 25px 25px 25px;
+  box-shadow: 2px 2px 2px #858383;
+  font-size: 18px;
+  align-items: center;
+  vertical-align: middle;
+  padding: 2%;
+  height: 55px;
+  justify-items: center;
+  transform: scale(1);
+  padding-top: 17px;
+  background: radial-gradient(ellipse at 110% 90%, #9356DC, #FF79DA);
+}
+.explorer:hover {
+  transform: scale(1.15);
+  box-shadow: 4px 4px 4px #6b6a6a;
+  opacity: 0.6;
+}
+
+body {
+  font-family: "Roboto", cursive;
+  margin-left: 0px;
+  margin: 0px;
+}
+
+/*
+.choix1
+    {  
+      place-items: center;
+      margin-left: 10px;
+
+      margin-bottom: 10px;
+      padding-left: 10px;
+        font-size: 17px;
+      font-weight: bold;
+      margin-top: 14px;
+    } */
+/*.choix a {
+  margin-top: 15px;
+  padding-top: 3px;
+  padding-bottom: 0%;
+  text-decoration-line: none;
+  -moz-text-decoration-line: none;
+}
+*/
 #menu {
   background-color: #f2f2f2;
   display: flex;
@@ -339,6 +340,7 @@ body {
 }
 
 .card {
+  position: relative;
   display: flex;
   -webkit-text-decoration-line: none;
           text-decoration-line: none;
@@ -375,22 +377,23 @@ body {
 
 .imgmenu {
   height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
   overflow: hidden;
   width: 100%;
   margin: 0px;
 }
 
-.card__image {
+.cardimage {
   border-radius: 20px 20px 0px 0px;
   height: 100%;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   overflow: hidden;
-  position: relative;
 }
 @media screen and (min-width: 768px) and (max-width: 992px) {
-  .card__image {
+  .cardimage {
     height: 200px;
   }
 }
@@ -404,13 +407,22 @@ body {
   border-radius: 0px 0px 20px 20px;
   height: 90px;
   background-color: white;
-  -webkit-text-decoration-line: none;
-          text-decoration-line: none;
 }
 @media screen and (min-width: 768px) and (max-width: 992px) {
   .card__descrip {
     height: 133px;
   }
+}
+
+.themust {
+  display: flex;
+  justify-content: space-between;
+  color: black;
+  padding-left: 10px;
+  border: none;
+  border-radius: 0px 0px 20px 20px;
+  height: 90px;
+  background-color: white;
 }
 
 .jaime {
@@ -448,7 +460,7 @@ body {
 
 .descrip {
   position: relative;
-  background-color: white;
+  background-color: red;
 }
 .descrip.descrip i {
   position: absolute;
@@ -500,7 +512,6 @@ input:checked ~ .fas {
   font-size: 30px;
   margin-right: 25px;
   padding-left: 0px;
-  position: relative;
 }
 @media screen and (min-width: 768px) and (max-width: 992px) {
   .lovemenu {
@@ -528,8 +539,7 @@ input:checked ~ .fas {
   font-weight: bold;
   border: 1px solid #99E2D0;
   background-color: #99E2D0;
-  color: green;
-  /*:darken ($colour-tertiaire,55%);*/
+  color: darken #99E2D0, 55%;
   margin-right: 15px;
   margin-top: 15px;
   display: grid;
@@ -554,17 +564,6 @@ input:checked ~ .fas {
     flex-direction: row;
     width: 100%;
     margin-left: 0px;
-  }
-}
-
-.fleche {
-  margin-top: 12px;
-  font-size: 25px;
-  color: #000;
-}
-@media screen and (max-width: 768px) {
-  .fleche {
-    margin-left: -30px;
   }
 }
 
@@ -594,6 +593,7 @@ input:checked ~ .fas {
   margin-top: -20px;
   background-color: #f2f2f2;
   justify-content: center;
+  width: 100%;
 }
 @media screen and (max-width: 768px) {
   .detailcarte {
@@ -624,9 +624,9 @@ hr {
   margin-bottom: 15px;
   align-items: flex-start;
   border-top: 2px solid #99E2D0;
-  margin-left: 0px;
-  width: 30px;
-  margin-top: 0;
+  margin-left: 12px;
+  width: 34px;
+  margin-top: 5px;
 }
 
 .propo {
@@ -664,7 +664,7 @@ hr {
   }
 }
 .commande:hover {
-  box-shadow: 2px 2px 2px red;
+  box-shadow: 2px 2px 2px #383737;
 }
 
 h4 {
@@ -727,15 +727,19 @@ h4 {
 }
 
 .choisissez {
+  width: 100%;
   background-color: #f2f2f2;
   display: flex;
   flex-direction: column;
+  height: auto;
 }
 
 .jeveux {
-  margin: 2%;
+  background-color: #f2f2f2;
+  margin: 0%;
+  padding: 3%;
   display: block;
-  align-items: center;
+  text-align: center;
 }
 
 /*FOOTER*/
