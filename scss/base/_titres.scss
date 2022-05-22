@@ -29,8 +29,8 @@ h1 {
 
 h2 {
   margin-left: 10px;
-  &.restaumarg{
-    margin-left: 20px;
+  &.restomarg{
+    margin-left: 25px;
   }
 }
 
@@ -52,3 +52,22 @@ h3
     font-stretch: 100%;
   }
  
+
+  .repas {
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+    font-size: 18px;
+    margin-left: 15px;
+    padding-top: 5px;
+    margin-bottom: 0px;
+  }
+   
+hr {
+  margin-bottom: 15px;
+  align-items: flex-start;
+  border-top: 2px solid #99E2D0 ;
+ margin-left: 12px;
+  width: 34px;
+  margin-top: 5px;  
+}

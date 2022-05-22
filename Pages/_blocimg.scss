@@ -4,8 +4,25 @@
     width: 100%;
     object-fit:cover;
     overflow: hidden;
- 
+  margin-bottom:-3px;
     @media screen and (min-width: 768px) and (max-width:992px) {
       height: 200px;
     }
   }
+  .new {
+    align-items: end;
+    position: absolute;
+    height: 30px;
+    width: 80px;
+    font-weight: bold;
+    border: 1px solid $colour-tertiaire ;
+    background-color: $colour-tertiaire;
+    color : $colour-noyau;
+    margin-right: 15px;
+    margin-top: 15px;
+    display: grid;
+    place-items: center;
+    right: 20px;
+    top: 10px;
+  }
+  
