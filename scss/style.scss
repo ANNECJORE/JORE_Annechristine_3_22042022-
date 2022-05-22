@@ -4,13 +4,17 @@
 @import"./layout/header";
 @import"./layout/intro";
 @import"./composants/boutons";
+@import"../Pages/blocimg";
 
 body {
   font-family: 'Roboto', cursive;
   margin-left: 0px;
   margin: 0px;
 }
- 
+ a
+ {
+   text-decoration-line:none ;
+ }
 /*
 .choix1
     {  
@@ -31,10 +35,6 @@ body {
   -moz-text-decoration-line: none;
 }
 */
-
-
- 
-
 #menu {
   background-color: #f2f2f2;
   display: flex;
@@ -43,7 +43,7 @@ body {
   padding-bottom: 30px;
   margin-bottom: 0px;
   padding-left:  0px;
- height: auto;
+
   @media screen and (min-width: 768px) and (max-width:992px) {
     margin-left: 0%;
     width: 100%;
@@ -56,20 +56,17 @@ body {
   }
 }
 
-.menu__card{
- 
+.menu__card
+{ display: flex;
+ /*position: relative;*/
   margin-left: 15px;
   margin-bottom: 10px;
-  display: flex;
-  justify-content: space-around;
-  flex-direction: row;
+  justify-content: center;
   align-items: center;
   background-color: #f2f2f2;
   margin-right: 0%;
   padding-bottom: 10px;
-  width: 90%;
-  gap: 15px;
-  padding-left: 0px;
+  width: 95%;
   @media screen and (min-width: 768px) and (max-width:992px) {
     flex-direction: wrap;
     margin-left: 15px;
@@ -81,65 +78,57 @@ body {
   }
   @media screen and (max-width:667px) {
     flex-direction: column;
+    margin-right: 15px;
   }
 }
  
-.essai
-{position: relative;
+ .globalcard
+{
   display: flex;
   flex-direction: column;
-  height: auto;
- width: 200px;
- 
+margin: 0%;
+width: 100%; 
+height:auto;
+margin-left: 15px;
+@media screen and (max-width:667px) {
+  margin-bottom: 15px;
+  margin-right: 15px;
 }
-.card {
- position: relative;
-  display: flex;
+}
+ 
+.card 
+  {
+    position: relative;
+ margin-left: 0%;
   text-decoration-line: none;
-  flex-direction: column;
-  border: 2px solid black;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  border-color: red;
-  border-radius: 20px 20px 20px 20px;
-  box-shadow: 2px 2px 2px #807d7d;
+   margin-bottom: 0px;
+  border-radius: 20px 20px 00px 0px;
+ /*box-shadow: 2px 2px 2px #807d7d;*/
   width: 100%;
-  height: 300px;
   padding-left: 0px;
   @media screen and (min-width: 768px) and (max-width:992px) {
     width: 95%;
     justify-content: center;
   }
-  
-  
-}
  
-.card1 
+  } 
+  .visible
   {
- 
-  text-decoration-line: none;
-  border: 2px solid rebeccapurple;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  /*border-color: red;*/
-  border-radius: 20px 20px 00px 0px;
-  box-shadow: 2px 2px 2px #807d7d;
-  width: 100%;
-  padding-left: 0px;
- 
+    text-decoration-line:none ;
+    color: #000;
   }
 .imgmenu
- /*.card__image */{
+ {
   height: 300px;
   object-fit: cover;
   overflow: hidden; 
   width: 100%;
   margin: 0px;
 }
-
+/*
   .cardimage {
     border-radius: 20px 20px 0px 0px;
-    height: 100%;
+    height: 200px;
     width: 100%;
     object-fit:cover;
     overflow: hidden;
@@ -149,7 +138,7 @@ body {
     }
   }
 
-
+*/
 .card__descrip {
   display: flex;
   justify-content: space-between;
@@ -157,11 +146,12 @@ body {
   padding-left: 10px;
   border: none;
   border-radius: 0px 0px 20px 20px;
-  height: 90px;
+  height:auto;
   background-color: white;
-  
+  height:auto; 
+  padding-bottom:8px ;
   @media screen and (min-width: 768px) and (max-width:992px) {
-    height: 133px;
+    height: 120px;
   }
 }
 
@@ -195,7 +185,7 @@ body {
   background: radial-gradient(ellipse at 110% 90%, $colour-first, $colour-secondary);
 }
  .fa-heart
-{ color: transparent;
+{ color: black;
   opacity: 0;
   transition-duration: 0.5s;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));/*ON DEFINI UN BACKGROUND*/ 
@@ -285,7 +275,7 @@ input:checked ~ .fas{
   font-weight: bold;
   border: 1px solid $colour-tertiaire ;
   background-color: $colour-tertiaire;
-  color :darken ($colour-tertiaire,55%); 
+  color : $colour-noyau;
   margin-right: 15px;
   margin-top: 15px;
   display: grid;
