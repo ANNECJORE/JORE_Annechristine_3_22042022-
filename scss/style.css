@@ -4,6 +4,17 @@ h1 {
   margin: 0px;
 }
 
+body {
+  font-family: "Roboto", cursive;
+  margin-left: 0px;
+  margin: 0px;
+}
+
+a {
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
+}
+
 .presentation {
   text-align: center;
   background-color: #f2f2f2;
@@ -111,6 +122,42 @@ hr {
           text-decoration-line: none;
 }
 
+/*header
+
+{
+  display: flex;
+flex-direction: column;
+  position: relative   ;
+  justify-content: center;
+  align-items: center;
+  animation: fadeout 0.2s linear;
+  animation-delay: 2.5s;
+  animation-fill-mode: both;
+ opacity: 0.3; 
+}
+.loader
+{position: absolute;
+  animation-name:spin;
+  border: 16px solid $colour-first;
+  border-bottom: 16px solid $colour-tertiaire;
+  border-top: 16px solid $colour-secondary;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear 5;
+
+  animation-duration: 10ms;
+  &:hover  {
+    opacity: 0;
+    &header{opacity: 1;}
+  }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+ */
 /*les logos*/
 .logo,
 .logo_menu {
@@ -304,17 +351,6 @@ hr {
   top: 10px;
 }
 
-body {
-  font-family: "Roboto", cursive;
-  margin-left: 0px;
-  margin: 0px;
-}
-
-a {
-  -webkit-text-decoration-line: none;
-          text-decoration-line: none;
-}
-
 #menu {
   background-color: #f2f2f2;
   display: flex;
@@ -417,6 +453,7 @@ a {
 }
 
 .card__descrip {
+  position: relative;
   display: flex;
   justify-content: space-between;
   color: black;
@@ -427,6 +464,14 @@ a {
   background-color: white;
   height: auto;
   padding-bottom: 8px;
+}
+.card__descrip.card__descrip i {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  right: 10px;
+  top: 50%;
 }
 @media screen and (min-width: 768px) and (max-width: 992px) {
   .card__descrip {
@@ -445,51 +490,58 @@ a {
   justify-content: center;
 }
 
+.love {
+  position: relative;
+  overflow: hidden;
+  color: #000;
+  font-size: 20px;
+  opacity: 1;
+  z-index: 1;
+  transition: 0.6s;
+  transform: all;
+  /* background: radial-gradient(ellipse at 110% 90%, $colour-first, $colour-secondary);*/
+}
+.love:hover {
+  opacity: 0;
+  transform: scale(0.2);
+}
+
 .love1 {
   position: absolute;
-  overflow: hidden;
-  font-size: 20px;
+  color: palevioletred;
+  z-index: 2;
   opacity: 0;
   transition: 0.6s;
-  transform: scale(1.1);
-  background: radial-gradient(ellipse at 110% 90%, #9356DC, #FF79DA);
+  font-size: 20px;
+  transform: all;
+}
+.love1:hover {
+  opacity: 1;
+  transform: scale(1.2);
 }
 
-.fa-heart {
-  color: black;
+/* 
+ .fa-heart
+{ font-size: 20px; 
   opacity: 1;
   transition-duration: 0.5s;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
-  -webkit-background-clip: text;
-          background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.fa-heart:hover.fa-heart {
-  opacity: 1;
-}
-
-.descrip {
-  position: relative;
-  background-color: red;
-}
-.descrip.descrip i {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA)); 
+ background-clip: text ;
+ -webkit-text-fill-color: transparent; 
+ &:hover.fa-heart {
+   opacity: 1; 
+ }
+} */
+/*input{
   position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: right;
-  right: 10px;
-  top: 50%;
-}
 
-input {
-  position: absolute;
   width: 10rem;
   height: 10rem;
   opacity: 0;
   cursor: pointer;
   z-index: 3;
 }
-
+*/
 /*QUAND LA CHECKBOX EST CHECK*/
 input:checked ~ .far {
   transition-duration: 0.5s;
@@ -502,20 +554,19 @@ input:checked ~ .fas {
   opacity: 1;
 }
 
-.love {
-  pointer-events: none;
+/*
+.love
+{ 
   font-size: 30px;
-  margin-right: 25px;
+    margin-right: 25px;
   vertical-align: middle;
-  padding-left: 0px;
-}
-.love.love > a {
-  pointer-events: none;
-}
-.love.love > a :hover {
-  color: palevioletred;
-}
-
+    padding-left: 0px;
+color: #000;
+   &:hover  {
+     color:radial-gradient(ellipse at 110% 90%, $colour-first, $colour-secondary);
+   }
+  }
+ */
 .lovemenu {
   /*  margin-right: 20px;*/
   margin-top: 20px;
@@ -604,6 +655,34 @@ input:checked ~ .fas {
   margin-right: 20px;
 }
 
+.plat1 {
+  margin-top: 0px;
+  padding-top: 15px;
+  background-color: #f2f2f2;
+  gap: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  -webkit-animation: fadein 10s;
+          animation: fadein 10s;
+}
+
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 .propo {
   display: flex;
   flex-direction: column;

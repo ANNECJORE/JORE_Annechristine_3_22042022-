@@ -1,3 +1,40 @@
+@import"../Utils/variable";
+ /*header
+ 
+{
+  display: flex;
+flex-direction: column;
+  position: relative   ;
+  justify-content: center;
+  align-items: center;
+  animation: fadeout 0.2s linear;
+  animation-delay: 2.5s;
+  animation-fill-mode: both;
+ opacity: 0.3; 
+}
+.loader
+{position: absolute;
+  animation-name:spin;
+  border: 16px solid $colour-first;
+  border-bottom: 16px solid $colour-tertiaire;
+  border-top: 16px solid $colour-secondary;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear 5;
+ 
+  animation-duration: 10ms;
+  &:hover  {
+    opacity: 0;
+    &header{opacity: 1;}
+  }
+}
+ 
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+ */
 /*les logos*/
 .logo,
 .logo_menu {

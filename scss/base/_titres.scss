@@ -1,8 +1,18 @@
 /* page accueil*/
+@import "../Utils/variable";
 h1 {
   margin: 0px;
 }
-
+body {
+  font-family: 'Roboto', cursive;
+  margin-left: 0px;
+  margin: 0px;
+}
+ a
+ {
+   text-decoration-line:none ;
+ }
+ 
 
 .presentation {
   text-align: center;
@@ -66,7 +76,7 @@ h3
 hr {
   margin-bottom: 15px;
   align-items: flex-start;
-  border-top: 2px solid #99E2D0 ;
+  border-top: 2px solid $colour-tertiaire; 
  margin-left: 12px;
   width: 34px;
   margin-top: 5px;  
