@@ -32,6 +32,8 @@ height: 100%;
   animation: spin 2s  ease-in-out;
  animation-iteration-count: 5;
  align-items: center;
+ margin:0px;
+ position:absolute;
  
 @keyframes spin {
   0%

@@ -130,6 +130,7 @@ hr {
   align-items: flex-start;
   border-top: 2px solid #99E2D0;
   margin-left: 12px;
+  width: 40px;
   margin-top: 5px;
 }
 
@@ -210,6 +211,8 @@ header {
   -webkit-animation-iteration-count: 5;
           animation-iteration-count: 5;
   align-items: center;
+  margin: 0px;
+  position: absolute;
 }
 @-webkit-keyframes spin {
   0% {
@@ -662,7 +665,7 @@ header {
   margin-right: 20px;
 }
 
-.plat1 {
+.plat {
   margin-top: 0px;
   padding-top: 15px;
   background-color: #f2f2f2;
