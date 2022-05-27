@@ -1,3 +1,4 @@
+
 .cardimage {
     border-radius: 20px 20px 0px 0px;
     height: 200px;
@@ -24,5 +25,113 @@
     place-items: center;
     right: 20px;
     top: 10px;
+  }
+   
+#menu {
+  background-color: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-bottom: 30px;
+  margin-bottom: 0px;
+  padding-left:  0px;
+
+  @media screen and (min-width: 768px) and (max-width:992px) {
+    margin-left: 0%;
+    width: 100%;
+    padding-right: 0%;
+    padding-left: 15px;
+  }
+
+  @media screen and (max-width:667px) {
+    flex-direction: column;
+  }
+}
+
+.menu__card
+{ display: flex;
+ /*position: relative;*/
+  margin-left: 15px;
+  margin-bottom: 10px;
+  justify-content: center;
+  align-items: center;
+  background-color: #f2f2f2;
+  margin-right: 0%;
+  padding-bottom: 10px;
+  width: 95%;
+  @media screen and (min-width: 768px) and (max-width:992px) {
+    flex-direction: wrap;
+    margin-left: 15px;
+    align-items: center;
+    justify-content: space-around;
+    width: 85%;
+    margin-right: 15px;
+    height: auto;
+  }
+  @media screen and (max-width:667px) {
+    flex-direction: column;
+    margin-right: 15px;
+  }
+}
+.globalcard
+{
+  display: flex;
+  flex-direction: column;
+margin: 0%;
+width: 100%; 
+height:auto;
+margin-left: 15px;
+@media screen and (max-width:667px) {
+  margin-bottom: 15px;
+  margin-right: 15px;
+}
+}
+  
+ 
+.card 
+{
+  position: relative;
+margin-left: 0%;
+text-decoration-line: none;
+ margin-bottom: 0px;
+border-radius: 20px 20px 00px 0px;
+/*box-shadow: 2px 2px 2px #807d7d;*/
+width: 100%;
+padding-left: 0px;
+@media screen and (min-width: 768px) and (max-width:992px) {
+  width: 95%;
+  justify-content: center;
+}
+} 
+.visible
+  {
+    text-decoration-line:none ;
+    color: #000;
+  }
+ 
+  .card__descrip {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    color: black;
+    padding-left: 10px;
+    border: none;
+    border-radius: 0px 0px 20px 20px;
+    height:auto;
+    background-color: white;
+    height:auto; 
+    padding-bottom:8px ;
+    &.card__descrip i
+    {
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: right;
+      right:10px;
+      top: 50%;
+    }
+    @media screen and (min-width: 768px) and (max-width:992px) {
+      height: 120px;
+    }
   }
   
