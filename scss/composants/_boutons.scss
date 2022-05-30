@@ -107,4 +107,17 @@ top: 3px;
   transform: scale(1.2);
 }
 }
- 
+ .vertok
+ {
+   position: absolute;
+   background-color: $colour-tertiaire;
+   border: 2px solid $colour-tertiaire;
+ height: 55px;
+ width: 55px;
+ margin-left: -12px;
+ position: right;
+ }
+.fa-check
+{
+  color: #000;
+}

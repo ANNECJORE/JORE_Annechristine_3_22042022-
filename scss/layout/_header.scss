@@ -1,60 +1,63 @@
 @import"../Utils/variable";
 
-header
- 
-{
-    display: flex;
-flex-direction: column;
+header {
+  display: flex;
+  flex-direction: column;
 }
-.blocloader
-{ 
-width:100%;
-height: 100%;
-  position: fixed   ;
+
+.blocloader {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  position: fixed;
   justify-content: center;
-  background-color:#FFFFFF80 ;
+  background-color: white;
   align-items: center;
-  animation: spinner 0.2s ;
+  animation: spinner 0.2s;
   animation-delay: 2.5s;
   animation-fill-mode: both;
- 
+z-index: 1000;
 }
-.loader
-{display: block;
- justify-content: center; 
-  animation-name:spin;
+
+.loader {
+  display: block;
+
+  justify-content: center;
+  animation-name: spin;
   border: 16px solid $colour-first;
   border-bottom: 16px solid $colour-tertiaire;
   border-top: 16px solid $colour-secondary;
   border-radius: 50%;
   width: 100px;
   height: 100px;
-  animation: spin 2s  ease-in-out;
- animation-iteration-count: 5;
- align-items: center;
- margin:0px;
- position:center;
- margin-right: 20px;
-@keyframes spin {
-  0%
-   { 
-    transform: rotate(0deg); 
-  }
-
-  100% 
-  { transform: rotate(360deg); }
-}
-
-}
-@keyframes spinner 
-{
-  100%
-  {
-     opacity: 0;
-     z-index: -1;
-  }
-}
+  animation: spin 2s ease-in-out;
+  animation-iteration-count: 5;
+  align-items: center;
+  margin: 0px;
  
+  margin-right: 20px;
+  position: relative;
+
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+}
+
+@keyframes spinner {
+  100% {
+    opacity: 0;
+    z-index: -1;
+  }
+}
+
 
 /*les logos*/
 .logo,
@@ -73,39 +76,38 @@ height: 100%;
     }
   }
 }
+
 /*les flèches*/
 
 .fleche {
-    margin-top: 12px;
-    font-size: 25px;
-    color: #000;
-    @media screen and (max-width: 768px) {
-      margin-left: -30px;
-    }
+  margin-top: 12px;
+  font-size: 25px;
+  color: #000;
+
+  @media screen and (max-width: 768px) {
+    margin-left: -30px;
   }
-  
+}
+
 /*formulaire arrivée*/
 
 .formulaireoù {
-    display: flex;
-    background-color: rgb(199, 196, 196);
-    justify-content: center;
-    height: 50px;
-    border-top: 2px solid grey;
-    width: 100%;
-    padding-bottom: 5px;
-  
-    .iconegeo {
-      align-items: center;
-      margin-right: 20px;
-      margin-top: 17px;
-      font-size: 18px;
-    }
+  display: flex;
+  background-color: rgb(199, 196, 196);
+  justify-content: center;
+  height: 50px;
+  border-top: 2px solid grey;
+  width: 100%;
+  padding-bottom: 5px;
+
+  .iconegeo {
+    align-items: center;
+    margin-right: 20px;
+    margin-top: 17px;
+    font-size: 18px;
   }
+}
 
-  .lieu {
-    font-size: 20px;
-  }
-
- 
-
+.lieu {
+  font-size: 20px;
+}

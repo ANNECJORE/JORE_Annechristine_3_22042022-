@@ -19,29 +19,7 @@
  &:hover.fa-heart {
    opacity: 1; 
  }
-} */
-/*input{
-  position: absolute;
-
-  width: 10rem;
-  height: 10rem;
-  opacity: 0;
-  cursor: pointer;
-  z-index: 3;
-}
-*/
-/*QUAND LA CHECKBOX EST CHECK*/
-input:checked ~ .far {
-  transition-duration: 0.5s;
-  opacity: 0;
-}
-
-/*QUAND LA CHECKBOX EST CHECK*/
-input:checked ~ .fas{
-  transition-duration: 0.5s;
-  opacity: 1;
-}
- 
+} */ 
  
 
 /*noteenchantee*/
