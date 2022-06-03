@@ -496,20 +496,6 @@ header {
   transform: scale(1.2);
 }
 
-.vertok {
-  position: absolute;
-  background-color: #99E2D0;
-  border: 2px solid #99E2D0;
-  height: 55px;
-  width: 55px;
-  margin-left: -12px;
-  position: right;
-}
-
-.fa-check {
-  color: #000;
-}
-
 .cardimage {
   border-radius: 20px 20px 0px 0px;
   height: 200px;
@@ -729,18 +715,23 @@ header {
   }
 }
 
+.greenanim {
+  display: flex;
+}
+
 .commande {
+  display: inline;
   position: relative;
-  max-width: 300px;
+  width: 300px;
   align-items: flex-start;
   margin-bottom: 15px;
   padding: 5px;
   background-color: white;
   border: 1px solid white;
+  box-shadow: 2px 2px 2px #858383;
   border-radius: 15px 15px 15px 15px;
   height: 55px;
   margin-left: 10px;
-  box-shadow: 2px 2px 2px #858383;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -764,6 +755,9 @@ h4 {
   font-size: 16px;
   font-weight: bolder;
   text-align: left;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 @media screen and (max-width: 768px) {
   h4 {
@@ -773,7 +767,6 @@ h4 {
 }
 
 .option {
-  position: relative;
   display: flex;
   justify-content: space-between;
   padding-right: 0px;
@@ -789,6 +782,7 @@ h4 {
 }
 
 .complement {
+  display: block;
   text-align: start;
   margin: 0%;
   width: 80%;
@@ -802,7 +796,17 @@ h4 {
   }
 }
 
+.price {
+  display: flex;
+  text-align: end;
+  justify-content: flex-end;
+  font-weight: bold;
+  align-items: flex-end;
+  padding-left: 5px;
+}
+
 .prix {
+  display: block;
   text-align: end;
   font-weight: bold;
   padding-bottom: 10px;
@@ -813,10 +817,56 @@ h4 {
     margin: 0%;
   }
 }
+.prix:hover {
+  transform: translateX(-60px);
+}
 
 .vertok {
-  color: #99E2D0;
+  display: block;
+  justify-content: center;
+  height: 56px;
+  width: 55px;
+  margin-left: 0px;
+  color: white;
+  font-size: 30px;
+  padding-top: 12px;
+  text-align: center;
+}
+
+.fa-check-circle {
+  -webkit-animation-name: ronde;
+          animation-name: ronde;
+  align-items: center;
+  transition-property: transform;
+}
+.fa-check-circle .greenanim :hover .fa-check-circle {
+  transform: rotate(360deg);
+  transition-duration: 2s;
+}
+
+.greenanim :hover .essaiturn {
+  margin-right: 0px;
+  transition-duration: 1s;
+  transition-timing-function: ease;
+}
+
+.essaiturn {
   position: absolute;
+  right: -4px;
+  top: 0px;
+  width: 68px;
+  height: 65px;
+  margin-right: -60px;
+  background-color: #99E2D0;
+  display: block;
+  border-radius: 0px 20px 20px 0px;
+  transition: transform;
+  transform: all;
+  opacity: 0;
+}
+.essaiturn:hover {
+  /*   margin-right: 0%;*/
+  opacity: 1;
 }
 
 /* 
