@@ -835,7 +835,9 @@ h4 {
   text-align: end;
   font-weight: bold;
   padding-bottom: 10px;
+  transition-property: transform;
   margin: 0px;
+  transition-duration: 2.5s;
 }
 @media screen and (max-width: 768px) {
   .prix {
@@ -861,41 +863,42 @@ h4 {
 }
 
 .fa-check-circle {
-  -webkit-animation-name: ronde;
-          animation-name: ronde;
   align-items: center;
+  transition-duration: 1s;
   transition-property: transform;
 }
-.fa-check-circle .greenanim :hover .fa-check-circle {
+
+.greenanim:hover .fa-check-circle {
   transform: rotate(360deg);
   transition-duration: 2s;
 }
 
 .greenanim:hover .essaiturn {
   margin-right: 0px;
-  transition-duration: 1s;
-  transition-timing-function: ease;
-  translate: -60px;
+  transition-duration: 3s;
+  transition-timing-function: ease-in-out;
+  transform: translateX(-53px);
+  transition-duration: 2s;
   opacity: 1;
+}
+.greenanim:hover .essaiturn .prix {
+  transform: translateX(-60px);
 }
 
 .essaiturn {
   position: absolute;
-  right: -4px;
+  right: -60px;
   top: 0px;
-  width: 68px;
+  width: 65px;
   height: 65px;
-  margin-right: -60px;
+  /*   margin-right: 120px;*/
+  border: 2px solid #99E2D0;
   background-color: #99E2D0;
   display: block;
   border-radius: 0px 20px 20px 0px;
   transition: transform;
   transform: all;
   opacity: 0;
-}
-.essaiturn:hover {
-  /*   margin-right: 0%;*/
-  opacity: 1;
 }
 
 /* 
