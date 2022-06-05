@@ -720,7 +720,38 @@ header {
 }
 
 .commande {
-  display: inline;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  width: 300px;
+  align-items: flex-start;
+  margin-bottom: 15px;
+  padding: 5px;
+  /* background-color: white;
+   border: 1px solid white;*
+   box-shadow: 2px 2px 2px $colour-gris;*/
+  border-radius: 15px 15px 15px 15px;
+  height: 55px;
+  margin-left: 10px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  /*
+     &:hover {
+       box-shadow: 2px 2px 2px darken($colour-gris, 30%);
+     }*/
+}
+@media screen and (max-width: 768px) {
+  .commande {
+    padding: 0%;
+    width: 98%;
+    padding-left: 15px;
+    align-items: flex-start;
+  }
+}
+
+.greenanim {
+  display: flex;
   position: relative;
   width: 300px;
   align-items: flex-start;
@@ -736,15 +767,7 @@ header {
   white-space: nowrap;
   text-overflow: ellipsis;
 }
-@media screen and (max-width: 768px) {
-  .commande {
-    padding: 0%;
-    width: 98%;
-    padding-left: 15px;
-    align-items: flex-start;
-  }
-}
-.commande:hover {
+.greenanim:hover {
   box-shadow: 2px 2px 2px #383737;
 }
 
@@ -767,6 +790,8 @@ h4 {
 }
 
 .option {
+  margin: 0%;
+  max-width: 80%;
   display: flex;
   justify-content: space-between;
   padding-right: 0px;
@@ -785,7 +810,7 @@ h4 {
   display: block;
   text-align: start;
   margin: 0%;
-  width: 80%;
+  max-width: 50%;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -817,7 +842,8 @@ h4 {
     margin: 0%;
   }
 }
-.prix:hover {
+
+.greenanim:hover .prix {
   transform: translateX(-60px);
 }
 
@@ -831,6 +857,7 @@ h4 {
   font-size: 30px;
   padding-top: 12px;
   text-align: center;
+  opacity: 1;
 }
 
 .fa-check-circle {
@@ -844,10 +871,12 @@ h4 {
   transition-duration: 2s;
 }
 
-.greenanim :hover .essaiturn {
+.greenanim:hover .essaiturn {
   margin-right: 0px;
   transition-duration: 1s;
   transition-timing-function: ease;
+  translate: -60px;
+  opacity: 1;
 }
 
 .essaiturn {
