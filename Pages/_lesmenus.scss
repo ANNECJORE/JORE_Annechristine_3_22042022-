@@ -61,7 +61,7 @@
    display: flex;
    position: relative;
    flex-direction: column; 
-   width: 300px;
+   width:80%;
    align-items: flex-start;
    margin-bottom: 15px;
    padding: 5px;
@@ -71,7 +71,7 @@
    border-radius: 15px 15px 15px 15px;
    height: 55px;
    margin-left: 10px;
-
+justify-content: space-between;
    overflow: hidden;
    white-space: nowrap;
    text-overflow: ellipsis;
@@ -92,13 +92,13 @@
   display: flex;
   position: relative;
   
-  width: 300px;
+  width:300px;
   align-items: flex-start;
   margin-bottom: 15px;
   padding: 5px;
   background-color: white;
   border: 1px solid white;
-  box-shadow: 2px 2px 2px $colour-gris;
+  box-shadow: 2px 4px 2px $colour-gris;
   border-radius: 15px 15px 15px 15px;
   height: 55px;
   margin-left: 10px;
@@ -111,8 +111,9 @@
   }
 }
  h4 {
-   padding-top: 5px;
-   margin: 0%;
+   padding-top: 0px;
+   margin-top: 2px;
+   margin-bottom: 4px;
    margin-top: 5px;
    font-size: 16px;
    font-weight: bolder;
@@ -127,7 +128,7 @@
 
    }
  }
-
+/*
  .option {
    margin: 0%;
    max-width: 80%;
@@ -143,12 +144,12 @@
      padding-bottom: 15px;
    }
  }
-
+*/
  .complement {
    display: block;
    text-align: start;
    margin: 0%;
-   max-width: 50%;
+   width: 80%;
    overflow: hidden;
    white-space: nowrap;
    text-overflow: ellipsis;
@@ -167,14 +168,19 @@
    padding-left: 5px;
 
  }
-
+.euro{
+margin-left:10px ;
+}
  .prix {
    display: block;
+   max-width: 20%;
    text-align: end;
    font-weight: bold;
+   flex-direction: flex-end;
+   align-items: flex-end;
    padding-bottom: 10px;
 transition-property: transform;
-   margin: 0px;
+   margin-left: 20px;
 transition-duration:2.5s;
    @media screen and (max-width: 768px) {
      margin: 0%;
@@ -182,10 +188,19 @@ transition-duration:2.5s;
     }
  }
    .greenanim:hover .prix {
-     transform: translateX(-60px);
-
-   } 
+  transform: translateX(00px); 
+     margin-right: -10px;
+     transition-duration:2.4s ;
+transition-timing-function: ease-in-out;
  
+   } 
+ .greenanim:hover .commande
+ {
+   max-width: 50%;
+   overflow: hidden;
+   white-space: nowrap;
+   text-overflow: ellipsis;
+ }
 
  .vertok {
    display: block;
@@ -219,21 +234,22 @@ transition-duration: 1s;
    transform: translateX(-53px);
    transition-duration: 2s;
    opacity: 1;
-   .prix {
-     transform: translateX(-60px);
+  }
+/*  .greenanim:hover .prix {
+     transform: translateX(-40px);
+     transition-duration:2s ;
 
-   }
-
- }
-
+   }*/
+ 
  .essaiturn {
    position: absolute;
-   right: -60px;
+  margin-left :3px; 
+   right: -60px; 
    top: 0px;
    width: 65px;
    height: 65px;
 /*   margin-right: 120px;*/
-border: 2px solid $colour-tertiaire;
+border: 3px solid $colour-tertiaire;
    background-color: $colour-tertiaire;
    display: block;
    border-radius: 0px 20px 20px 0px;
