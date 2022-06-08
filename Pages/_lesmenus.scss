@@ -98,11 +98,11 @@ justify-content: space-between;
   padding: 5px;
   background-color: white;
   border: 1px solid white;
-  box-shadow: 2px 4px 2px $colour-gris;
+  box-shadow: 6px 4px 4px $colour-gris;
   border-radius: 15px 15px 15px 15px;
   height: 55px;
   margin-left: 10px;
-
+margin-right: 10px;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -128,23 +128,7 @@ justify-content: space-between;
 
    }
  }
-/*
- .option {
-   margin: 0%;
-   max-width: 80%;
-   display: flex;
-   justify-content: space-between;
-   padding-right: 0px;
-   padding-bottom: 0px;
-
-   @media screen and (max-width: 768px) {
-     display: flex;
-     justify-content: space-between;
-     padding-right: 10px;
-     padding-bottom: 15px;
-   }
- }
-*/
+  
  .complement {
    display: block;
    text-align: start;
@@ -159,15 +143,7 @@ justify-content: space-between;
    }
  }
 
- .price {
-   display: flex;
-   text-align: end;
-   justify-content: flex-end;
-   font-weight: bold;
-   align-items: flex-end;
-   padding-left: 5px;
-
- }
+ 
 .euro{
 margin-left:10px ;
 }
@@ -183,7 +159,7 @@ transition-property: transform;
    margin-left: 20px;
 transition-duration:2.5s;
    @media screen and (max-width: 768px) {
-     margin: 0%;
+     margin-left: 20px;
  
     }
  }

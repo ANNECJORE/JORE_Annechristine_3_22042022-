@@ -760,10 +760,11 @@ header {
   padding: 5px;
   background-color: white;
   border: 1px solid white;
-  box-shadow: 2px 4px 2px #858383;
+  box-shadow: 6px 4px 4px #858383;
   border-radius: 15px 15px 15px 15px;
   height: 55px;
   margin-left: 10px;
+  margin-right: 10px;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -791,23 +792,6 @@ h4 {
   }
 }
 
-/*
- .option {
-   margin: 0%;
-   max-width: 80%;
-   display: flex;
-   justify-content: space-between;
-   padding-right: 0px;
-   padding-bottom: 0px;
-
-   @media screen and (max-width: 768px) {
-     display: flex;
-     justify-content: space-between;
-     padding-right: 10px;
-     padding-bottom: 15px;
-   }
- }
-*/
 .complement {
   display: block;
   text-align: start;
@@ -821,15 +805,6 @@ h4 {
   .complement {
     align-self: start;
   }
-}
-
-.price {
-  display: flex;
-  text-align: end;
-  justify-content: flex-end;
-  font-weight: bold;
-  align-items: flex-end;
-  padding-left: 5px;
 }
 
 .euro {
@@ -850,7 +825,7 @@ h4 {
 }
 @media screen and (max-width: 768px) {
   .prix {
-    margin: 0%;
+    margin-left: 20px;
   }
 }
 
