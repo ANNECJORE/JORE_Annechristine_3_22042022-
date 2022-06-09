@@ -426,7 +426,7 @@ header {
   opacity: 1;
   z-index: 1;
   transition: 0.6s;
-  transform: all;
+  transition: all;
 }
 .love:hover {
   opacity: 0;
@@ -441,7 +441,7 @@ header {
   opacity: 0;
   transition: 0.6s;
   font-size: 20px;
-  transform: all;
+  transition: all;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -469,7 +469,7 @@ header {
   opacity: 1;
   z-index: 1;
   transition: 0.6s;
-  transform: all;
+  transition: all;
   padding-top: 20px;
 }
 .lovemenu:hover {
@@ -485,7 +485,7 @@ header {
   opacity: 0;
   transition: 0.6s;
   font-size: 30px;
-  transform: all;
+  transition: all;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-top: 15px;
@@ -494,6 +494,62 @@ header {
 .lovepink:hover {
   opacity: 1;
   transform: scale(1.2);
+}
+
+/*bouton vert*/
+.vertok {
+  display: block;
+  justify-content: center;
+  height: 56px;
+  width: 55px;
+  margin-left: 0px;
+  color: white;
+  font-size: 30px;
+  padding-top: 12px;
+  text-align: center;
+  opacity: 1;
+}
+
+.fa-check-circle {
+  align-items: center;
+  transition-duration: 1s;
+  transition-property: transform;
+}
+
+.greenanim:hover .fa-check-circle {
+  transform: rotate(360deg);
+  transition-duration: 2s;
+}
+
+.greenanim:hover .essaiturn {
+  margin-right: 0px;
+  transition-duration: 3s;
+  transition-timing-function: ease-in-out;
+  transform: translateX(-53px);
+  transition-duration: 2s;
+  opacity: 1;
+}
+
+/*  .greenanim:hover .prix {
+    transform: translateX(-40px);
+    transition-duration:2s ;
+
+  }*/
+.essaiturn {
+  position: absolute;
+  margin-left: 3px;
+  right: -60px;
+  top: 0px;
+  width: 65px;
+  height: 65px;
+  /*   margin-right: 120px;*/
+  border: 3px solid #99E2D0;
+  background-color: #99E2D0;
+  display: block;
+  border-radius: 0px 20px 20px 0px;
+  transition: transform;
+  transform: all;
+  opacity: 0;
 }
 
 .cardimage {
@@ -660,6 +716,14 @@ header {
   }
 }
 
+.choisissez {
+  width: 100%;
+  background-color: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+}
+
 .plat {
   display: flex;
   flex-direction: column;
@@ -715,10 +779,6 @@ header {
   }
 }
 
-.greenanim {
-  display: flex;
-}
-
 .commande {
   display: flex;
   position: relative;
@@ -728,8 +788,8 @@ header {
   margin-bottom: 15px;
   padding: 5px;
   /* background-color: white;
-   border: 1px solid white;*
-   box-shadow: 2px 2px 2px $colour-gris;*/
+  border: 1px solid white;*
+  box-shadow: 2px 2px 2px $colour-gris;*/
   border-radius: 15px 15px 15px 15px;
   height: 55px;
   margin-left: 10px;
@@ -738,9 +798,9 @@ header {
   white-space: nowrap;
   text-overflow: ellipsis;
   /*
-     &:hover {
-       box-shadow: 2px 2px 2px darken($colour-gris, 30%);
-     }*/
+  &:hover {
+    box-shadow: 2px 2px 2px darken($colour-gris, 30%);
+  }*/
 }
 @media screen and (max-width: 768px) {
   .commande {
@@ -843,61 +903,6 @@ h4 {
   text-overflow: ellipsis;
 }
 
-.vertok {
-  display: block;
-  justify-content: center;
-  height: 56px;
-  width: 55px;
-  margin-left: 0px;
-  color: white;
-  font-size: 30px;
-  padding-top: 12px;
-  text-align: center;
-  opacity: 1;
-}
-
-.fa-check-circle {
-  align-items: center;
-  transition-duration: 1s;
-  transition-property: transform;
-}
-
-.greenanim:hover .fa-check-circle {
-  transform: rotate(360deg);
-  transition-duration: 2s;
-}
-
-.greenanim:hover .essaiturn {
-  margin-right: 0px;
-  transition-duration: 3s;
-  transition-timing-function: ease-in-out;
-  transform: translateX(-53px);
-  transition-duration: 2s;
-  opacity: 1;
-}
-
-/*  .greenanim:hover .prix {
-     transform: translateX(-40px);
-     transition-duration:2s ;
-
-   }*/
-.essaiturn {
-  position: absolute;
-  margin-left: 3px;
-  right: -60px;
-  top: 0px;
-  width: 65px;
-  height: 65px;
-  /*   margin-right: 120px;*/
-  border: 3px solid #99E2D0;
-  background-color: #99E2D0;
-  display: block;
-  border-radius: 0px 20px 20px 0px;
-  transition: transform;
-  transform: all;
-  opacity: 0;
-}
-
 /* 
  .fa-heart
 { font-size: 20px; 
@@ -920,14 +925,6 @@ h4 {
   padding-bottom: 20px;
 }
 */
-.choisissez {
-  width: 100%;
-  background-color: #f2f2f2;
-  display: flex;
-  flex-direction: column;
-  height: auto;
-}
-
 /*FOOTER*/
 /*.logo_blanc
 {margin-top: 0px;

@@ -10,6 +10,14 @@
    }
  }
 
+ .choisissez {
+   width: 100%;
+   background-color: #f2f2f2;
+   display: flex;
+   flex-direction: column;
+   height: auto;
+ }
+
  .plat {
    display: flex;
    flex-direction: column;
@@ -52,26 +60,21 @@
    }
  }
 
- .greenanim {
-   display: flex;
-
- }
-
  .commande {
    display: flex;
    position: relative;
-   flex-direction: column; 
-   width:80%;
+   flex-direction: column;
+   width: 80%;
    align-items: flex-start;
    margin-bottom: 15px;
    padding: 5px;
-  /* background-color: white;
+   /* background-color: white;
    border: 1px solid white;*
    box-shadow: 2px 2px 2px $colour-gris;*/
    border-radius: 15px 15px 15px 15px;
    height: 55px;
    margin-left: 10px;
-justify-content: space-between;
+   justify-content: space-between;
    overflow: hidden;
    white-space: nowrap;
    text-overflow: ellipsis;
@@ -82,34 +85,37 @@ justify-content: space-between;
      padding-left: 15px;
      align-items: flex-start;
    }
-/*
+
+   /*
    &:hover {
      box-shadow: 2px 2px 2px darken($colour-gris, 30%);
    }*/
- } 
-.greenanim
-{
-  display: flex;
-  position: relative;
-  
-  width:300px;
-  align-items: flex-start;
-  margin-bottom: 15px;
-  padding: 5px;
-  background-color: white;
-  border: 1px solid white;
-  box-shadow: 6px 4px 4px $colour-gris;
-  border-radius: 15px 15px 15px 15px;
-  height: 55px;
-  margin-left: 10px;
-margin-right: 10px;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  &:hover {
-    box-shadow: 2px 2px 2px darken($colour-gris, 30%);
-  }
-}
+ }
+
+ .greenanim {
+   display: flex;
+   position: relative;
+
+   width: 300px;
+   align-items: flex-start;
+   margin-bottom: 15px;
+   padding: 5px;
+   background-color: white;
+   border: 1px solid white;
+   box-shadow: 6px 4px 4px $colour-gris;
+   border-radius: 15px 15px 15px 15px;
+   height: 55px;
+   margin-left: 10px;
+   margin-right: 10px;
+   overflow: hidden;
+   white-space: nowrap;
+   text-overflow: ellipsis;
+
+   &:hover {
+     box-shadow: 2px 2px 2px darken($colour-gris, 30%);
+   }
+ }
+
  h4 {
    padding-top: 0px;
    margin-top: 2px;
@@ -128,7 +134,7 @@ margin-right: 10px;
 
    }
  }
-  
+
  .complement {
    display: block;
    text-align: start;
@@ -143,10 +149,11 @@ margin-right: 10px;
    }
  }
 
- 
-.euro{
-margin-left:10px ;
-}
+
+ .euro {
+   margin-left: 10px;
+ }
+
  .prix {
    display: block;
    max-width: 20%;
@@ -155,81 +162,28 @@ margin-left:10px ;
    flex-direction: flex-end;
    align-items: flex-end;
    padding-bottom: 10px;
-transition-property: transform;
+   transition-property: transform;
    margin-left: 20px;
-transition-duration:2.5s;
+   transition-duration: 2.5s;
+
    @media screen and (max-width: 768px) {
      margin-left: 20px;
- 
-    }
+
+   }
  }
-   .greenanim:hover .prix {
-  transform: translateX(00px); 
-     margin-right: -10px;
-     transition-duration:2.4s ;
-transition-timing-function: ease-in-out;
- 
-   } 
- .greenanim:hover .commande
- {
+
+ .greenanim:hover .prix {
+   transform: translateX(00px);
+   margin-right: -10px;
+   transition-duration: 2.4s;
+   transition-timing-function: ease-in-out;
+
+ }
+
+ .greenanim:hover .commande {
    max-width: 50%;
    overflow: hidden;
    white-space: nowrap;
    text-overflow: ellipsis;
  }
-
- .vertok {
-   display: block;
-   justify-content: center;
-   height: 56px;
-   width: 55px;
-   margin-left: 0px;
-   color: white;
-   font-size: 30px;
-   padding-top: 12px;
-   text-align: center;
-   opacity:  1;
- }
-
- .fa-check-circle {
  
-   align-items: center;
-transition-duration: 1s;
-   transition-property: transform;}
-
-   .greenanim:hover .fa-check-circle {
-     transform: rotate(360deg);
-     transition-duration: 2s;
-   }
- 
-
- .greenanim:hover .essaiturn  {
-   margin-right: 0px;
-   transition-duration: 3s;
-   transition-timing-function: ease-in-out;
-   transform: translateX(-53px);
-   transition-duration: 2s;
-   opacity: 1;
-  }
-/*  .greenanim:hover .prix {
-     transform: translateX(-40px);
-     transition-duration:2s ;
-
-   }*/
- 
- .essaiturn {
-   position: absolute;
-  margin-left :3px; 
-   right: -60px; 
-   top: 0px;
-   width: 65px;
-   height: 65px;
-/*   margin-right: 120px;*/
-border: 3px solid $colour-tertiaire;
-   background-color: $colour-tertiaire;
-   display: block;
-   border-radius: 0px 20px 20px 0px;
-   transition: transform;
-   transform: all;
-   opacity: 0;
- }
